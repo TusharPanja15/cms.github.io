@@ -296,12 +296,14 @@ h4:visited {
 @media (max-width: 450px) {
     #three .flex-item-center {
         position: relative;
-        top: 1150px;
+        top: 500px;
     }
     #three .flex-center-right .row .card {
-        width: 380px;
+        width: 400px;
         height: 120px;
-        border: 1px solid black;
+        position: relative;
+        top: 70px;
+        left: -140px;
     }
     #three .flex-center-right .card img {
         height: 100px;
@@ -309,14 +311,20 @@ h4:visited {
         object-fit: cover;
         position: relative;
     }
-    #three .flex-center-right .card h5 {
+    #three .flex-center-right .card-body {
         position: relative;
-        top: -100px;
+        top: -120px;
         left: 120px;
-        width: 250px;
+        width: 290px;
         margin-bottom: -1990px;
     }
     #three .flex-center-right .card .card-hidden {
         display: none;
+    }
+}
+
+@media (min-width: 451px) and (max-width: 992px) {
+    #three {
+        margin-top: 440px;
     }
 }

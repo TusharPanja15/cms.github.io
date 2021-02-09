@@ -1,3 +1,9 @@
+.card h1{
+    font-family: 'Oxygen', sans-serif;
+    font-size: larger;
+    font-weight: bolder;
+}
+
 .crop-height {
     /* max-width: 1200px; /* native or declared width of img src (if known) */
     max-height: 600px;
@@ -68,7 +74,6 @@ img.scale {
     visibility: hidden;
 }
 
-
 /* opacity allows user-friendly image saving */
 
 .transparent {
@@ -78,7 +83,6 @@ img.scale {
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)" filter: alpha(opacity=0);
     opacity: 0;
 }
-
 
 /* presentational CSS below */
 
@@ -157,9 +161,7 @@ code {
     background-color: rgba(80, 125, 212, 0);
 }
 
-.card-body-wrap,
-.card-body-wrap .card,
-.card-body-wrap img {
+.card-body-wrap, .card-body-wrap .card, .card-body-wrap img {
     border-radius: 4px;
     border: none;
 }
@@ -179,11 +181,10 @@ code {
     background: rgba(0, 0, 0, 0.3);
 }
 
-.header-img-content h1,
-.header-img-content p {
+.header-img-content h1, .header-img-content p {
     font-weight: bold;
     color: cornsilk;
-    font-family: 'Patrick Hand', cursive;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 @media (max-width: 993px) and (min-width: 768px) {
@@ -194,8 +195,7 @@ code {
         float: left;
         width: 100%;
     }
-    .header-img-content h1,
-    .header-img-content p {
+    .header-img-content h1, .header-img-content p {
         float: left;
         position: relative;
         top: 80px;
@@ -204,8 +204,7 @@ code {
 }
 
 @media (max-width: 768px) {
-    .header-img-content h1,
-    .header-img-content p {
+    .header-img-content h1, .header-img-content p {
         float: left;
         position: relative;
         top: -200px;
@@ -256,30 +255,26 @@ code {
     line-height: 1;
 }
 
-#page-top .monoliths,
-#page-top .monoliths2 {
+#page-top .monoliths, #page-top .monoliths2 {
     display: flex;
     overflow: hidden;
 }
 
-#page-top .monoliths li,
-#page-top .monoliths2 li {
+#page-top .monoliths li, #page-top .monoliths2 li {
     width: 37.5%;
     margin-right: -11.7%;
     -webkit-clip-path: polygon(25% 0, 100% 0, 75% 100%, 0 100%);
     clip-path: polygon(25% 0, 20% 0, 75% 100%, 0 100%);
 }
 
-#page-top .monoliths a,
-#page-top .monoliths2 a {
+#page-top .monoliths a, #page-top .monoliths2 a {
     color: inherit;
     text-decoration: inherit;
     display: block;
     padding: 1px;
 }
 
-#page-top .monoliths img,
-#page-top .monoliths2 img {
+#page-top .monoliths img, #page-top .monoliths2 img {
     display: block;
     height: 450px;
     width: 100%;
@@ -294,8 +289,7 @@ code {
 }
 
 @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
-    #page-top .monoliths li,
-    #page-top .monoliths2 li {
+    #page-top .monoliths li, #page-top .monoliths2 li {
         width: 37.5%;
     }
 }
@@ -342,25 +336,19 @@ code {
     margin-bottom: -451px;
 }
 
-#page-top .monoliths li .text-body h1 {
+#page-top .monoliths li .text-body h1, #page-top .monoliths li .text-body p {
     color: white;
     width: 500px;
     position: relative;
-    top: 270px;
+    top: 260px;
     left: 135px;
 }
 
 @media (max-width: 996px) {
-    #page-top .monoliths,
-    #page-top .monoliths2 {
+    #page-top .monoliths, #page-top .monoliths2 {
         display: none;
     }
-    .flex-item-center .flex-center-right .first,
-    .flex-item-center .flex-center-left .first,
-    .flex-item-center .flex-center-right .second,
-    .flex-item-center .flex-center-left .second,
-    .flex-item-center .flex-center-right .third,
-    .flex-item-center .flex-center-left .third {
+    .flex-item-center .flex-center-right .first, .flex-item-center .flex-center-left .first, .flex-item-center .flex-center-right .second, .flex-item-center .flex-center-left .second, .flex-item-center .flex-center-right .third, .flex-item-center .flex-center-left .third {
         flex: 100%;
     }
     .flex-item-center .flex-center-right .first {
