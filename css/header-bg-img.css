@@ -1,0 +1,323 @@
+.crop-height {
+    /* max-width: 1200px; /* native or declared width of img src (if known) */
+    max-height: 600px;
+    overflow: hidden;
+}
+
+img.scale {
+    /* corrects small inline gap at bottom of containing div */
+    display: block;
+    width: 100%;
+    /* corrects obscure Firefox bug */
+    max-width: 100%;
+    /* just in case, to force correct aspect ratio */
+    height: auto !important;
+    display: block;
+    /* corrects small inline gap at bottom of containing div */
+    width: 100%/* corrects obscure Firefox bug */
+    max-width: 100%;
+    /* just in case, to force correct aspect ratio */
+    height: auto !important;
+    /*width: auto\9; 
+  /* ie8+9 - use modernizr instead of this \9 hack */
+    /* lt ie8 */
+    -ms-interpolation-mode: bicubic;
+    /* optionally force a minimum size if img src size is known: */
+    /* min-height: 320px; /* max-height of .crop-height */
+    /* min-width: 480px; /* proportional to above */
+}
+
+.bg-image {
+    background-image: url(https://www.samsungmobilepress.com/asset/image/9f7af09c-e67e-4b3c-9493-e4abceb52027/3bf6688f-470c-4930-8665-7b2135941d10/011_galaxy_s21ultra_color_kv_single_5G_OOH_H.jpg);
+    /* lt ie8 */
+    -ms-background-position-x: center;
+    -ms-background-position-y: bottom;
+    /* default - may override with classes or media query */
+    background-position: center bottom;
+    /* scale bg image proportionately */
+    background-size: cover;
+    /* ie8 - https://github.com/louisremi/background-size-polyfill */
+    -ms-behavior: url(backgroundsize.min.htc);
+    /* prevent scaling past src width (or not) */
+    /* max-width: 1200px; */
+}
+
+.bg-center-bottom {
+    /* lt ie8 if needed */
+    /* -ms-background-position-x: center;
+	-ms-background-position-y: bottom; */
+    background-position: center bottom;
+}
+
+.bg-center-center {
+    /* lt ie8 if needed */
+    /* -ms-background-position-x: center;
+	-ms-background-position-y: center; */
+    background-position: center center;
+}
+
+.bg-position {
+    /* background position for specific image */
+    /* lt ie8 if needed */
+    /* -ms-background-position-x: 30%;
+	-ms-background-position-y: 60%; */
+    background-position: 30% 60%;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+/* opacity allows user-friendly image saving */
+
+.transparent {
+    /* trigger hasLayout for ie filters below */
+    zoom: 1;
+    /* 0 opacity in ms filters still displays layout */
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)" filter: alpha(opacity=0);
+    opacity: 0;
+}
+
+
+/* presentational CSS below */
+
+.page-wrap {
+    padding: .5em 0em 2em;
+}
+
+figure {
+    margin: 2em 0;
+}
+
+figcaption {
+    margin: .5em 0;
+    font-size: 85%;
+    font-style: italic;
+    color: #888;
+}
+
+code {
+    color: #808080;
+    background: #ffffe0;
+    padding: 0 .25em;
+    font-style: normal;
+}
+
+.header-container {
+    position: relative;
+    top: 65px;
+}
+
+@media (max-width: 728px) {
+    .header-container {
+        position: relative;
+        top: 0px;
+    }
+}
+
+.header-img-container .header-img-content {
+    position: absolute;
+    bottom: 0;
+    background: rgb(0, 0, 0);
+    /* Fallback color */
+    background: rgba(0, 0, 0, 0.5);
+    /* Black background with 0.5 opacity */
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+}
+
+.header-img-content {
+    margin-top: 200px;
+}
+
+.header-img-content h1:hover {
+    color: tomato;
+}
+
+.header-img-content h1:visited {
+    color: yellowgreen;
+}
+
+.card-body-wrap {
+    width: 440px;
+    height: 100%;
+    padding-top: 20px;
+    background: rgba(80, 125, 212, 0.8);
+    float: right;
+}
+
+.card-body-wrap .card {
+    width: 408px;
+    margin: 0px 0px 0px 15px;
+}
+
+.card-body-wrap .card {
+    background-color: rgba(80, 125, 212, 0);
+}
+
+.card-body-wrap, .card-body-wrap .card, .card-body-wrap img {
+    border-radius: 4px;
+    border: none;
+}
+
+.card-body-wrap img {
+    width: 100px;
+    height: 100px;
+    margin: 20px 0px 0px 20px;
+}
+
+.container-content {
+    position: relative;
+    top: -530px;
+}
+
+.page-wrap img {
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.header-img-content h1, .header-img-content p {
+    font-weight: bold;
+    color: cornsilk;
+    font-family: 'Patrick Hand', cursive;
+}
+
+@media (max-width: 993px) and (min-width: 768px) {
+    .card-body-wrap {
+        position: relative;
+        top: 700px;
+        left: -200px;
+        float: left;
+        width: 100%;
+    }
+    .header-img-content h1, .header-img-content p {
+        float: left;
+        position: relative;
+        top: 80px;
+        width: 700px;
+    }
+}
+
+@media (max-width: 768px) {
+    .header-img-content h1, .header-img-content p {
+        float: left;
+        position: relative;
+        top: -200px;
+    }
+    .card-body-wrap {
+        position: relative;
+        top: -200px;
+        float: left;
+        width: 100%;
+    }
+    .card-body-wrap .card {
+        width: 490px;
+        height: 100px;
+    }
+    .card-body-wrap .card img {
+        margin: 0px 0px 0px 0px;
+        position: relative;
+        left: 380px;
+        top: -110px;
+    }
+    .card-body-wrap .card-body {
+        width: 400px;
+    }
+}
+
+.page-wrap {
+    height: 690px;
+}
+
+#page-top .flex-left {
+    flex: 50%;
+    font-size: 20px;
+    margin-left: -150px;
+}
+
+#page-top .flex-center {
+    flex: 50%;
+    font-size: 20px;
+}
+
+#page-top .flex-right {
+    flex: 50%;
+    font-size: 20px;
+}
+
+#page-top {
+    color: #FFF;
+    line-height: 1;
+}
+
+#page-top .monoliths, #page-top .monoliths2 {
+    display: flex;
+    overflow: hidden;
+}
+
+#page-top .monoliths li, #page-top .monoliths2 li {
+    width: 37.5%;
+    margin-right: -11.7%;
+    -webkit-clip-path: polygon(25% 0, 100% 0, 75% 100%, 0 100%);
+    clip-path: polygon(25% 0, 20% 0, 75% 100%, 0 100%);
+}
+
+#page-top .monoliths a, #page-top .monoliths2 a {
+    color: inherit;
+    text-decoration: inherit;
+    display: block;
+    padding: 1px;
+}
+
+#page-top .monoliths img, #page-top .monoliths2 img {
+    display: block;
+    height: 450px;
+    width: 100%;
+    object-fit: cover;
+    object-position: 50% 20%;
+}
+
+#page-top .monoliths strong {
+    display: block;
+    font-weight: 900;
+    padding-left: 1%;
+}
+
+@supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
+    #page-top .monoliths li, #page-top .monoliths2 li {
+        width: 37.5%;
+    }
+}
+
+@supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
+    #page-top .monoliths .flex-left {
+        width: 37.5%;
+        -webkit-clip-path: polygon(25% 0, 100% 0, 75% 100%, 0 100%);
+        clip-path: polygon(0% 0, 100% 0, 75% 100%, 0 100%);
+    }
+    #page-top .monoliths .flex-center {
+        width: 37.5%;
+        -webkit-clip-path: polygon(25% 0, 100% 0, 75% 100%, 0 100%);
+        clip-path: polygon(25% 0, 100% 0, 75% 100%, 0 100%);
+    }
+    #page-top .monoliths .flex-right {
+        width: 37.5%;
+        -webkit-clip-path: polygon(25% 0, 100% 0, 75% 100%, 0 100%);
+        clip-path: polygon(25% 0, 100% 0, 100% 100%, 0 100%);
+    }
+    #page-top .monoliths2 .flex-left {
+        width: 37.5%;
+        -webkit-clip-path: polygon(25% 0, 100% 0, 75% 100%, 0 100%);
+        clip-path: polygon(0 0, 75% 0, 100% 100%, 0% 100%);
+    }
+    #page-top .monoliths2 .flex-center {
+        width: 37.5%;
+        -webkit-clip-path: polygon(25% 0, 100% 0, 75% 100%, 0 100%);
+        clip-path: polygon(0 0, 75% 0, 100% 100%, 25% 100%);
+    }
+    #page-top .monoliths2 .flex-right {
+        width: 37.5%;
+        -webkit-clip-path: polygon(25% 0, 100% 0, 75% 100%, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 25% 100%);
+    }
+}
