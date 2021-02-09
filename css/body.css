@@ -296,7 +296,7 @@ h4:visited {
 @media (max-width: 450px) {
     #three .flex-item-center {
         position: relative;
-        top: 2150px;
+        top: 550px;
     }
     #three .flex-center-right .row .card {
         width: 400px;
