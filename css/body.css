@@ -59,8 +59,7 @@ h4:visited {
     flex: 75%;
 }
 
-.row .flex-center-left,
-.row .flex-center-right {
+.row .flex-center-left, .row .flex-center-right {
     width: 100%;
     flex: 10%;
 }
@@ -69,12 +68,10 @@ h4:visited {
     margin-left: 80px;
 }
 
-
 /* Responsive layout - makes a one column-layout instead of a two-column layout */
 
 @media (max-width: 995px) {
-    .row .flex-center-left,
-    .row .flex-center-right {
+    .row .flex-center-left, .row .flex-center-right {
         flex: 100%;
         margin-left: 0px;
     }
@@ -87,8 +84,7 @@ h4:visited {
 }
 
 @media (min-width: 1200px) {
-    .flex-item-right,
-    .flex-item-left {
+    .flex-item-right, .flex-item-left {
         flex: 1%;
     }
 }
@@ -100,8 +96,7 @@ h4:visited {
 }
 
 @media (max-width: 1200px) {
-    .flex-item-right,
-    .flex-item-left {
+    .flex-item-right, .flex-item-left {
         display: none;
     }
 }
@@ -133,8 +128,7 @@ h4:visited {
     font-size: 25px;
 }
 
-.flex-center-right h1,
-.flex-center-left h1 {
+.flex-center-right h1, .flex-center-left h1, #three .flex-item-center h1 {
     font-family: 'Julius Sans One', sans-serif;
     font-size: 25px;
 }
@@ -282,6 +276,47 @@ h4:visited {
 
 @media (min-width: 996px) {
     #hide-hr {
+        display: none;
+    }
+}
+
+#two {
+    margin-top: -350px;
+}
+
+#three .flex-container {
+    align-items: center;
+    position: relative;
+    top: 0px;
+    bottom: 0px;
+    margin: 0 auto;
+    margin-bottom: 600px;
+}
+
+@media (max-width: 444px) {
+    #three .flex-item-center {
+        position: relative;
+        top: 1150px;
+    }
+    #three .flex-center-right .row .card {
+        width: 380px;
+        height: 120px;
+        border: 1px solid black;
+    }
+    #three .flex-center-right .card img {
+        height: 100px;
+        width: 120px;
+        object-fit: cover;
+        position: relative;
+    }
+    #three .flex-center-right .card h5 {
+        position: relative;
+        top: -100px;
+        left: 120px;
+        width: 250px;
+        margin-bottom: -1990px;
+    }
+    #three .flex-center-right .card .card-hidden {
         display: none;
     }
 }
