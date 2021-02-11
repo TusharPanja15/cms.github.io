@@ -1,7 +1,7 @@
 # cms.github.io
 
 
-This is a Comtent Management System where users can able to enjoy their faviourie artictls or stories of any topic like new technologies, smartphones, avaitions, reviews, and even a detail specs list on every smartphones on current date.
+This is a Comtent Management System where users can able to enjoy their faviourie article or stories of any topic like new technologies, smartphones, avaitions, reviews, and even a detail specs list on every smartphones on current date.
 
 
 Note: This software is currently under developement, so you could find only basic html, css and javascript code with some copyright images.
