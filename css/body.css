@@ -299,7 +299,7 @@ h4:visited {
         top: 1250px;
     }
     #three .flex-center-right .row .card {
-        width: 400px;
+        width: 300px;
         height: 120px;
         position: relative;
         top: 70px;
@@ -333,4 +333,8 @@ h4:visited {
         margin-top: 440px;
         margin-bottom: 400px;
     }
+}
+
+.card {
+    border: 1px solid black !important;
 }
