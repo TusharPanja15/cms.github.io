@@ -87,7 +87,7 @@ img.scale {
 /* presentational CSS below */
 
 .page-wrap {
-    padding: .5em 0em 2em;
+    padding-top: .5em;
 }
 
 figure {
