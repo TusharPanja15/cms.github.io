@@ -2,6 +2,13 @@
     box-sizing: border-box;
 }
 
+footer {
+    text-align: center;
+    padding: 33px;
+    background-color: DarkSalmon;
+    color: white;
+}
+
 .hr-dotted {
     border-top: 2.6px dashed #b5a49b;
 }
@@ -293,6 +300,56 @@ h4:visited {
     margin-bottom: 600px;
 }
 
+.flex-center-right .first .row .card :hover, .flex-center-right .second .row .card :hover {
+    color: rgb(255, 235, 58);
+}
+
+.flex-center-right .first .container .card h5:hover, .flex-center-right .second .container .card h5:hover, .flex-center-left .first .card:hover, .flex-center-left .second .card:hover {
+    color: rgb(50, 98, 255);
+}
+
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.middle-small {
+    transition: .2s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 11%;
+    padding-top: 30px;
+    width: 7.5rem;
+    height: 119px;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.flex-center-right .first .card:hover img, .flex-center-left .first .card:hover img, .flex-center-left .second .card:hover img {
+    opacity: 0.9;
+}
+
+.flex-center-right .first .card:hover .middle, .flex-center-left .first .card:hover .middle-small, .flex-center-left .second .card:hover .middle-small {
+    background: rgba(0, 0, 0, 0.356);
+    color: white;
+    opacity: 1;
+}
+
+.flex-center-right .first .card .text {
+    color: white;
+    font-size: 22px;
+    font-weight: 600;
+    padding: 6px 2px;
+}
+
 @media (max-width: 450px) {
     #three .flex-item-center {
         position: relative;
@@ -322,7 +379,6 @@ h4:visited {
     #one .flex-center-left .card-body {
         width: 240px;
     }
-    
     #three .flex-center-right .card .card-hidden {
         display: none;
     }
@@ -335,6 +391,162 @@ h4:visited {
     }
 }
 
-.card {
-    border: 1px solid black !important;
+/* SLIDED CARD CONTAINER */
+
+/* BOTTOM SLIDED CARD CONTAINER */
+
+#page-top .flex-left {
+    flex: 50%;
+    font-size: 20px;
+    margin-left: -150px;
+}
+
+#page-top .flex-center {
+    flex: 50%;
+    font-size: 20px;
+}
+
+#page-top .flex-right {
+    flex: 50%;
+    font-size: 20px;
+}
+
+#page-top {
+    color: #FFF;
+    line-height: 1;
+}
+
+#page-top .monoliths, #page-top .monoliths2 {
+    display: flex;
+    overflow: hidden;
+}
+
+#page-top .monoliths li, #page-top .monoliths2 li {
+    width: 37.5%;
+    margin-right: -11.7%;
+    -webkit-clip-path: polygon(25% 0, 100% 0, 75% 100%, 0 100%);
+    clip-path: polygon(25% 0, 20% 0, 75% 100%, 0 100%);
+}
+
+#page-top .monoliths a, #page-top .monoliths2 a {
+    color: inherit;
+    text-decoration: inherit;
+    display: block;
+    padding: 1px;
+}
+
+#page-top .monoliths img, #page-top .monoliths2 img {
+    display: block;
+    height: 450px;
+    width: 100%;
+    object-fit: cover;
+    object-position: 50% 20%;
+    transition: all 0.3s;
+    transform: scale(1);
+}
+
+#page-top .monoliths .flex-left:hover h1, #page-top .monoliths .flex-center:hover h1, #page-top .monoliths .flex-right:hover h1 {
+    color: rgba(255, 255, 255, 0.493);
+}
+
+#page-top .monoliths .flex-left:hover img, #page-top .monoliths .flex-center:hover img, #page-top .monoliths .flex-right:hover img, #page-top .monoliths2 .flex-left:hover img, #page-top .monoliths2 .flex-center:hover img, #page-top .monoliths2 .flex-right:hover img {
+    transform: scale(1.1);
+}
+
+#page-top .monoliths strong {
+    display: block;
+    font-weight: 900;
+    padding-left: 1%;
+}
+
+@supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
+    #page-top .monoliths li, #page-top .monoliths2 li {
+        width: 37.5%;
+    }
+}
+
+@supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
+    #page-top .monoliths .flex-left {
+        width: 37.5%;
+        -webkit-clip-path: polygon(25% 0, 100% 0, 75% 100%, 0 100%);
+        clip-path: polygon(0% 0, 100% 0, 75% 100%, 0 100%);
+    }
+    #page-top .monoliths .flex-center {
+        width: 37.5%;
+        -webkit-clip-path: polygon(25% 0, 100% 0, 75% 100%, 0 100%);
+        clip-path: polygon(25% 0, 100% 0, 75% 100%, 0 100%);
+    }
+    #page-top .monoliths .flex-right {
+        width: 37.5%;
+        -webkit-clip-path: polygon(25% 0, 100% 0, 75% 100%, 0 100%);
+        clip-path: polygon(25% 0, 100% 0, 100% 100%, 0 100%);
+    }
+    #page-top .monoliths2 .flex-left {
+        width: 37.5%;
+        -webkit-clip-path: polygon(25% 0, 100% 0, 75% 100%, 0 100%);
+        clip-path: polygon(0 0, 75% 0, 100% 100%, 0% 100%);
+    }
+    #page-top .monoliths2 .flex-center {
+        width: 37.5%;
+        -webkit-clip-path: polygon(25% 0, 100% 0, 75% 100%, 0 100%);
+        clip-path: polygon(0 0, 75% 0, 100% 100%, 25% 100%);
+    }
+    #page-top .monoliths2 .flex-right {
+        width: 37.5%;
+        -webkit-clip-path: polygon(25% 0, 100% 0, 75% 100%, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 25% 100%);
+    }
+}
+
+#page-top .monoliths .text-body, #page-top .monoliths2 .text-body {
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 450px;
+    position: relative;
+    top: -450px;
+    margin-bottom: -451px;
+}
+
+#page-top .monoliths li .text-body h1, #page-top .monoliths li .text-body p {
+    color: white;
+    width: 500px;
+    position: relative;
+    top: 260px;
+    left: 135px;
+}
+
+#page-top .monoliths2 li .text-body h1, #page-top .monoliths2 li .text-body p {
+    color: white;
+    width: 400px;
+    text-align: center;
+    position: relative;
+    top: 260px;
+    left: 165px;
+}
+
+@media (max-width: 996px) {
+    #page-top .monoliths, #page-top .monoliths2 {
+        display: none;
+    }
+    .flex-item-center .flex-center-right .first, .flex-item-center .flex-center-left .first, .flex-item-center .flex-center-right .second, .flex-item-center .flex-center-left .second, .flex-item-center .flex-center-right .third, .flex-item-center .flex-center-left .third {
+        flex: 100%;
+    }
+    .flex-item-center .flex-center-right .first {
+        order: 1;
+    }
+    .flex-item-center .flex-center-left .first {
+        order: 2;
+    }
+    .flex-item-center .flex-center-right .second {
+        order: 3;
+    }
+    .flex-item-center .flex-center-left .second {
+        order: 4;
+    }
+    .flex-item-center .flex-center-right .third {
+        order: 5;
+    }
+    .flex-item-center .flex-center-left .third {
+        order: 6;
+    }
 }

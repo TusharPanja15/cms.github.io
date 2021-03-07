@@ -1,4 +1,4 @@
-.card h1{
+.card h1 {
     font-family: 'Oxygen', sans-serif;
     font-size: larger;
     font-weight: bolder;
@@ -34,7 +34,7 @@ img.scale {
 }
 
 .bg-image {
-    background-image: url(https://www.samsungmobilepress.com/asset/image/9f7af09c-e67e-4b3c-9493-e4abceb52027/3bf6688f-470c-4930-8665-7b2135941d10/011_galaxy_s21ultra_color_kv_single_5G_OOH_H.jpg);
+    background-image: url(https://cdn.motor1.com/images/mgl/KNPZA/s1/nasa-perseverance-mars-rover.jpg);
     /* lt ie8 */
     -ms-background-position-x: center;
     -ms-background-position-y: bottom;
@@ -110,7 +110,7 @@ code {
 
 .header-container {
     position: relative;
-    top: 65px;
+    top: 84px;
 }
 
 @media (max-width: 728px) {
@@ -132,12 +132,20 @@ code {
     padding: 20px;
 }
 
+.header-img-content h1, .card-body-wrap h5 {
+    color: white;
+}
+
+.header-img-content .card-text, .card-body-wrap .card-text {
+    color: rgb(229, 226, 226);
+}
+
 .header-img-content {
     margin-top: 200px;
 }
 
-.header-img-content h1:hover {
-    color: tomato;
+.header-img-content h1:hover, .card-body-wrap h5:hover {
+    color: rgb(182, 179, 179);
 }
 
 .header-img-content h1:visited {
@@ -147,7 +155,8 @@ code {
 .card-body-wrap {
     width: 440px;
     height: 100%;
-    padding-top: 20px;
+    padding: 20px 0px 0px 0px;
+    margin: 14px 0px 0px 0px;
     background: rgba(80, 125, 212, 0.8);
     float: right;
 }
@@ -232,141 +241,4 @@ code {
 
 .page-wrap {
     height: 690px;
-}
-
-#page-top .flex-left {
-    flex: 50%;
-    font-size: 20px;
-    margin-left: -150px;
-}
-
-#page-top .flex-center {
-    flex: 50%;
-    font-size: 20px;
-}
-
-#page-top .flex-right {
-    flex: 50%;
-    font-size: 20px;
-}
-
-#page-top {
-    color: #FFF;
-    line-height: 1;
-}
-
-#page-top .monoliths, #page-top .monoliths2 {
-    display: flex;
-    overflow: hidden;
-}
-
-#page-top .monoliths li, #page-top .monoliths2 li {
-    width: 37.5%;
-    margin-right: -11.7%;
-    -webkit-clip-path: polygon(25% 0, 100% 0, 75% 100%, 0 100%);
-    clip-path: polygon(25% 0, 20% 0, 75% 100%, 0 100%);
-}
-
-#page-top .monoliths a, #page-top .monoliths2 a {
-    color: inherit;
-    text-decoration: inherit;
-    display: block;
-    padding: 1px;
-}
-
-#page-top .monoliths img, #page-top .monoliths2 img {
-    display: block;
-    height: 450px;
-    width: 100%;
-    object-fit: cover;
-    object-position: 50% 20%;
-}
-
-#page-top .monoliths strong {
-    display: block;
-    font-weight: 900;
-    padding-left: 1%;
-}
-
-@supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
-    #page-top .monoliths li, #page-top .monoliths2 li {
-        width: 37.5%;
-    }
-}
-
-@supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
-    #page-top .monoliths .flex-left {
-        width: 37.5%;
-        -webkit-clip-path: polygon(25% 0, 100% 0, 75% 100%, 0 100%);
-        clip-path: polygon(0% 0, 100% 0, 75% 100%, 0 100%);
-    }
-    #page-top .monoliths .flex-center {
-        width: 37.5%;
-        -webkit-clip-path: polygon(25% 0, 100% 0, 75% 100%, 0 100%);
-        clip-path: polygon(25% 0, 100% 0, 75% 100%, 0 100%);
-    }
-    #page-top .monoliths .flex-right {
-        width: 37.5%;
-        -webkit-clip-path: polygon(25% 0, 100% 0, 75% 100%, 0 100%);
-        clip-path: polygon(25% 0, 100% 0, 100% 100%, 0 100%);
-    }
-    #page-top .monoliths2 .flex-left {
-        width: 37.5%;
-        -webkit-clip-path: polygon(25% 0, 100% 0, 75% 100%, 0 100%);
-        clip-path: polygon(0 0, 75% 0, 100% 100%, 0% 100%);
-    }
-    #page-top .monoliths2 .flex-center {
-        width: 37.5%;
-        -webkit-clip-path: polygon(25% 0, 100% 0, 75% 100%, 0 100%);
-        clip-path: polygon(0 0, 75% 0, 100% 100%, 25% 100%);
-    }
-    #page-top .monoliths2 .flex-right {
-        width: 37.5%;
-        -webkit-clip-path: polygon(25% 0, 100% 0, 75% 100%, 0 100%);
-        clip-path: polygon(0 0, 100% 0, 100% 100%, 25% 100%);
-    }
-}
-
-#page-top .monoliths .text-body {
-    background: rgba(0, 0, 0, 0.5);
-    width: 100%;
-    height: 450px;
-    position: relative;
-    top: -450px;
-    margin-bottom: -451px;
-}
-
-#page-top .monoliths li .text-body h1, #page-top .monoliths li .text-body p {
-    color: white;
-    width: 500px;
-    position: relative;
-    top: 260px;
-    left: 135px;
-}
-
-@media (max-width: 996px) {
-    #page-top .monoliths, #page-top .monoliths2 {
-        display: none;
-    }
-    .flex-item-center .flex-center-right .first, .flex-item-center .flex-center-left .first, .flex-item-center .flex-center-right .second, .flex-item-center .flex-center-left .second, .flex-item-center .flex-center-right .third, .flex-item-center .flex-center-left .third {
-        flex: 100%;
-    }
-    .flex-item-center .flex-center-right .first {
-        order: 1;
-    }
-    .flex-item-center .flex-center-left .first {
-        order: 2;
-    }
-    .flex-item-center .flex-center-right .second {
-        order: 3;
-    }
-    .flex-item-center .flex-center-left .second {
-        order: 4;
-    }
-    .flex-item-center .flex-center-right .third {
-        order: 5;
-    }
-    .flex-item-center .flex-center-left .third {
-        order: 6;
-    }
 }
