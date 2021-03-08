@@ -1,0 +1,104 @@
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    top: 50px;
+    height: 100%;
+    margin-bottom: 200px;
+}
+
+.flex-item-left {
+    padding: 10px;
+    flex: 70%;
+}
+
+.flex-item-right {
+    padding: 10px;
+    flex: 20%;
+}
+
+@media (max-width: 1050px) {
+    .flex-item-right {
+        display: none;
+    }
+}
+
+.flex-item-left .card {
+    margin: 0 auto;
+    width: 95%;
+    border: none;
+}
+
+.flex-item-left .card:hover h3 {
+    color: orangered;
+}
+
+.flex-item-left .card:hover h1 {
+    color: orange;
+}
+
+.flex-item-left .heading {
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 25px;
+}
+
+.flex-item-left .card .col-md-4 img {
+    width: 200px;
+    height: 200px;
+}
+
+@media (max-width: 768px) {
+    .flex-item-left .card {
+        width: 100%;
+    }
+
+    .flex-item-left .card .col-md-4 img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .flex-item-left .card .card-body {
+        width: 80%;
+        height: 80px;
+        position: relative;
+        top: -160px;
+        left: 150px;
+    }
+
+    .flex-item-left .img-overlay .card-img-overlay .card-title {
+        position: relative;
+        top: 20px;
+        font-size:x-large;
+    }
+}
+
+.flex-item-left .img-overlay, .flex-item-left .img-overlay img {
+    height: 380px;
+}
+
+img {
+    object-fit: cover;
+}
+
+.flex-item-left .img-overlay .card-img-overlay {
+    background: rgba(0, 0, 0, 0.356);
+    color: white;
+    width: 97%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 14px;
+}
+
+.flex-item-left .img-overlay .card-img-overlay .card-title, .flex-item-left .img-overlay .card-img-overlay .card-text {
+    width: 70%;
+    position: relative;
+    top: 200px;
+}
+
+@media (min-width: 992px) and (max-width: 1398px) {
+    .flex-item-left .img-overlay .card-img-overlay .card-title, .flex-item-left .img-overlay .card-img-overlay .card-text {
+        position: relative;
+        top: 150px;
+    }
+}

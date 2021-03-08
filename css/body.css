@@ -1,8 +1,7 @@
-footer {
-    text-align: center;
-    padding: 33px;
-    background-color: DarkSalmon;
-    color: white;
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
 }
 
 .hr-dotted {
@@ -22,25 +21,6 @@ h4:hover {
 h4:visited {
     color: #006fcf;
     text-decoration: underline;
-}
-
-.text-block {
-    position: absolute;
-    bottom: 0;
-    background: rgb(0, 0, 0);
-    background: rgba(0, 0, 0, 0.5);
-    /* Black see-through */
-    color: #f1f1f1;
-    width: 100%;
-    height: 40%;
-    transition: .5s ease;
-    opacity: 0;
-    color: white;
-    font-size: 20px;
-    margin: 0px -90px 0px -90px;
-    padding: 20px;
-    text-align: center;
-    opacity: 1;
 }
 
 .flex-container {
@@ -127,8 +107,13 @@ h4:visited {
 }
 
 .flex-center-right .card .card-img-overlay .card-title {
+    color: white;
     margin-top: 150px;
     font-size: 25px;
+}
+
+.flex-center-right .card .card-img-overlay .card-text small {
+    color: white;
 }
 
 .flex-center-right h1, .flex-center-left h1, #three .flex-item-center h1 {
@@ -296,7 +281,7 @@ h4:visited {
     margin-bottom: 600px;
 }
 
-.flex-center-right .first .row .card :hover, .flex-center-right .second .row .card :hover {
+.flex-center-right .first .row .card:hover, .flex-center-right .second .row .card:hover {
     color: rgb(255, 235, 58);
 }
 
@@ -327,10 +312,6 @@ h4:visited {
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     text-align: center;
-}
-
-.flex-center-right .first .card:hover img, .flex-center-left .first .card:hover img, .flex-center-left .second .card:hover img {
-    opacity: 0.9;
 }
 
 .flex-center-right .first .card:hover .middle, .flex-center-left .first .card:hover .middle-small, .flex-center-left .second .card:hover .middle-small {

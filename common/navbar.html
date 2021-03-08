@@ -1,199 +1,87 @@
-<!doctype html>
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <style type="text/css">
-    /* CSS Document */
 
-body{margin-top: 50px; margin-bottom: 100px;}
+    <!--External Custom CSS-->
+    <link rel="stylesheet" href="../css/navbar.css">
 
-/* equal card height */
-.row-equal > div[class*='col-'] {
-    display: flex;
-    flex: 1 0 auto;
-}
-
-.row-equal .card {
-   width: 100%;
-}
-
-/* ensure equal card height inside carousel */
-.carousel-inner>.row-equal.active, 
-.carousel-inner>.row-equal.next, 
-.carousel-inner>.row-equal.prev {
-    display: flex;
-}
-
-/* prevent flicker during transition */
-.carousel-inner>.row-equal.active.left, 
-.carousel-inner>.row-equal.active.right {
-    opacity: 0.5;
-    display: flex;
-}
-
-
-/* control image height */
-.card-img-top-250 {
-    max-height: 250px;
-    overflow:hidden;
-}
-
-
-.card-header{color:dodgerblue}
-    </style>
-
-    <title>Untitled Document</title>
 </head>
-
 <body>
 
-    <section class="container p-t-3">
-        <div class="row">
-            <div class="col-lg-12">
-                <h1><span style="color: crimson">Bootstrap 4 Card Slider</span> by webseotips</h1>
-            </div>
-        </div>
-    </section>
-    <section class="carousel slide" data-ride="carousel" id="postsCarousel">
+    <nav class="navbar">
+    
+        <!-- <button id="navbar-svg" class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"><svg xmlns="http://www.w3.org/2000/svg" width="66" height="36"
+                        fill="currentColor" class="bi bi-blockquote-left" viewBox="0 1.9 16 16">
+                        <path
+                            d="M2.5 3a.5.5 0 0 0 0 1h11a.5.5 0 0 0 0-1h-11zm5 3a.5.5 0 0 0 0 1h6a.5.5 0 0 0 0-1h-6zm0 3a.5.5 0 0 0 0 1h6a.5.5 0 0 0 0-1h-6zm-5 3a.5.5 0 0 0 0 1h11a.5.5 0 0 0 0-1h-11zm.79-5.373c.112-.078.26-.17.444-.275L3.524 6c-.122.074-.272.17-.452.287-.18.117-.35.26-.51.428a2.425 2.425 0 0 0-.398.562c-.11.207-.164.438-.164.692 0 .36.072.65.217.873.144.219.385.328.72.328.215 0 .383-.07.504-.211a.697.697 0 0 0 .188-.463c0-.23-.07-.404-.211-.521-.137-.121-.326-.182-.568-.182h-.282c.024-.203.065-.37.123-.498a1.38 1.38 0 0 1 .252-.37 1.94 1.94 0 0 1 .346-.298zm2.167 0c.113-.078.262-.17.445-.275L5.692 6c-.122.074-.272.17-.452.287-.18.117-.35.26-.51.428a2.425 2.425 0 0 0-.398.562c-.11.207-.164.438-.164.692 0 .36.072.65.217.873.144.219.385.328.72.328.215 0 .383-.07.504-.211a.697.697 0 0 0 .188-.463c0-.23-.07-.404-.211-.521-.137-.121-.326-.182-.568-.182h-.282a1.75 1.75 0 0 1 .118-.492c.058-.13.144-.254.257-.375a1.94 1.94 0 0 1 .346-.3z" />
+                    </svg>
+                </span>
+            </button> -->
+    
         <div class="container">
             <div class="row">
-                <div class="col-12 text-right mb-4">
-                    <a class="btn btn-outline-secondary prev" href="" title="go back"><i
-                            class="fa fa-lg fa-chevron-left"></i></a>
-                    <a class="btn btn-outline-secondary next" href="" title="more"><i
-                            class="fa fa-lg fa-chevron-right"></i></a>
+                <div class="col">
+                    <ul class="nav justify-content-center">
+                        <li class="nav-item">
+                            <a class="navbar-brand" href="index.html"><img style="width: 180px; height: 70px;"
+                                    src="https://dynamictint.com/wp-content/uploads/2020/04/tesla-logo-vector-30.png"></a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
-        <div class="container p-t-0 m-t-2 carousel-inner">
-            <div class="row row-equal carousel-item active m-t-0">
-                <div class="col-md-4">
-                    <div class="card">
-                        <div class="card-img-top card-img-top-250">
-                            <img class="img-fluid" src="../img/payments.gif" alt="Carousel 1">
-                        </div>
-                        <div class="card-block p-t-2">
-                            <div class="card-header">
-                                <h3>flower1</h3>
-                            </div>
-                            <div class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium
-                                animi molestias veritatis, pariatur dolorem error non reprehenderit vero, id. Incidunt
-                                hic laudantium soluta recusandae, voluptas libero et! Ipsa, maiores, ratione.</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card">
-                        <div class="card-img-top card-img-top-250">
-                            <img class="img-fluid" src="../img/payments.gif" alt="Carousel 1">
-                        </div>
-                        <div class="card-block p-t-2">
-                            <div class="card-header">
-                                <h3>flower2</h3>
-                            </div>
-                            <div class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium
-                                animi molestias veritatis, pariatur dolorem error non reprehenderit vero, id. Incidunt
-                                hic laudantium soluta recusandae, voluptas libero et! Ipsa, maiores, ratione.</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card">
-                        <div class="card-img-top card-img-top-250">
-                            <img class="img-fluid" src="../img/payments.gif" alt="Carousel 1">
-                        </div>
-                        <div class="card-block p-t-2">
-                            <div class="card-header">
-                                <h3>flower1</h3>
-                            </div>
-                            <div class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium
-                                animi molestias veritatis, pariatur dolorem error non reprehenderit vero, id. Incidunt
-                                hic laudantium soluta recusandae, voluptas libero et! Ipsa, maiores, ratione.</div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-            <div class="row row-equal carousel-item m-t-0">
-                <div class="col-md-4">
-                    <div class="card">
-                        <div class="card-img-top card-img-top-250">
-                            <img class="img-fluid" src="../img/payments.gif"
-                                alt="Carousel 1">
-                        </div>
-                        <div class="card-block p-t-2">
-                            <div class="card-header">
-                                <h3>flower1</h3>
-                            </div>
-                            <div class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium
-                                animi molestias veritatis, pariatur dolorem error non reprehenderit vero, id. Incidunt
-                                hic laudantium soluta recusandae, voluptas libero et! Ipsa, maiores, ratione.</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card">
-                        <div class="card-img-top card-img-top-250">
-                            <img class="img-fluid"
-                                src="../img/payments.gif"
-                                alt="Carousel 1">
-                        </div>
-                        <div class="card-block p-t-2">
-                            <div class="card-header">
-                                <h3>flower1</h3>
-                            </div>
-                            <div class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium
-                                animi molestias veritatis, pariatur dolorem error non reprehenderit vero, id. Incidunt
-                                hic laudantium soluta recusandae, voluptas libero et! Ipsa, maiores, ratione.</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card">
-                        <div class="card-img-top card-img-top-250">
-                            <img class="img-fluid" src="../img/payments.gif" alt="Carousel 1">
-                        </div>
-                        <div class="card-block p-t-2">
-                            <div class="card-header">
-                                <h3>flower1</h3>
-                            </div>
-                            <div class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium
-                                animi molestias veritatis, pariatur dolorem error non reprehenderit vero, id. Incidunt
-                                hic laudantium soluta recusandae, voluptas libero et! Ipsa, maiores, ratione.</div>
-                        </div>
-                    </div>
+    
+    </nav>
+    
+    <nav id="second-nav">
+        <div class="container-fluid">
+            <div class="container">
+                <div class="row">
+                    <ul class="nav justify-content-center">
+                        <li class="nav-item">
+                            <a class="navbar-brand" href="index.html"><svg xmlns="http://www.w3.org/2000/svg" width="35"
+                                    height="30" fill="white" class="bi bi-house-fill" viewBox="0 -2 17 16">
+                                    <path fill-rule="evenodd"
+                                        d="M8 3.293l6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6zm5-.793V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z" />
+                                    <path fill-rule="evenodd"
+                                        d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z" />
+                                </svg></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="news.html">News</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Phones</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Reviews</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+                                aria-expanded="false">More</a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a class="dropdown-item" href="#">Action</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">Another action</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">Separated link</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
-    </section>
-
-
-
-
-
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"
-        integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
-        crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"
-        integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
-        crossorigin="anonymous"></script>
-    <script>
-        (function ($) {
-            "use strict";
-            $('.next').click(function () { $('.carousel').carousel('next'); return false; });
-            $('.prev').click(function () { $('.carousel').carousel('prev'); return false; });
-        })
-            (jQuery);
-    </script>
-
-
+    </nav>
 
 </body>
-
 </html>
