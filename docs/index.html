@@ -19,6 +19,7 @@
         integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
 
     <!--External Custom CSS-->
+    <link rel="stylesheet" href="../css/common.css">
     <link rel="stylesheet" href="../css/body.css">
     <link rel="stylesheet" href="../css/card-slider.css">
     <link rel="stylesheet" href="../css/header-bg-img.css">
@@ -27,18 +28,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet">
     <!--font-family: 'Amatic SC', cursive;-->
-
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap" rel="stylesheet">
-    <!--font-family: 'Julius Sans One', sans-serif;-->
-
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
-    <!--font-family: 'Ubuntu', sans-serif;-->
-
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300&display=swap" rel="stylesheet">
-    <!--font-family: 'Oxygen', sans-serif;-->
 
 </head>
 
@@ -260,7 +249,7 @@
 
                     <div class="row">
                         <div class="col-sm-8 flex-center-right">
-                            <h1>TOP STORIES</h1>
+                            <h1 class="heading">TOP STORIES</h1>
                             <div class="card" style="width: 100%;">
                                 <div class="card-body">
 
@@ -373,8 +362,8 @@
 
 
                         <div class="col-sm-4 flex-center-left">
-                            <h1>LATEST STORIES</h1>
-                            <a href="">All News</a>
+                            <h1 class="heading">LATEST STORIES</h1>
+                            <a href="news.html">All News</a>
                             <br><br>
 
                             <div class="first">
@@ -701,7 +690,7 @@
                     <br><br><br>
 
                     <div class="row">
-                        <h1>OTHER STORIES</h1>
+                        <h1 class="heading">OTHER STORIES</h1>
 
 
                         <div class="col-sm-8 flex-center-right">
@@ -1010,7 +999,7 @@
             document.getElementById("demo").innerHTML = "Width: " + w + "<br>Height: " + h;
         }
 
-        // MORE NEWS
+        // LOAD MORE NEWS PAGE
         document.getElementById("moreNews").onclick = function () {
             location.href = "news.html";
         };

@@ -1,9 +1,3 @@
-.card h1 {
-    font-family: 'Oxygen', sans-serif;
-    font-size: larger;
-    font-weight: bolder;
-}
-
 .crop-height {
     /* max-width: 1200px; /* native or declared width of img src (if known) */
     max-height: 600px;
@@ -183,9 +177,8 @@ figcaption {
 }
 
 .header-img-content h1, .header-img-content p {
-    font-weight: bold;
+    font-weight: 500;
     color: cornsilk;
-    font-family: 'Ubuntu', sans-serif;
 }
 
 @media (max-width: 993px) and (min-width: 768px) {
