@@ -12,11 +12,36 @@
 
     <!--External Custom CSS-->
     <link rel="stylesheet" href="../css/common.css">
-    <link rel="stylesheet" href="../css/news-body-css.css">
 
     <style type="text/css">
+
+    .flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    top: 150px;
+    height: 100%;
+    margin-bottom: 200px;
+}
+
+.flex-item-left {
+    flex: 0%;
+}
+
+.flex-item-center {
+    padding: 10px;
+    flex: 50%;
+}
+
+.flex-item-right {
+    padding: 10px;
+    flex: 25%;
+}
+
+
+
         p {
-            font-size: 25px;
+            font-size: 20px;
         }
 
         small {
@@ -40,16 +65,23 @@
             <div class="flex-container">
 
                 <div class="flex-item-left">
+                </div>
+
+                <div class="flex-item-center">
 
                     <div class="col">
                         <h1 class="display-5">Audi Q4 E-Tron electric SUV promises AR head-up display, clever storage
                         </h1>
                         <br><br>
-                        <h1 class="heading">This compact electric crossover may look small, but inside lie some big
-                            aspirations.</h1>
+                        <p class="display-6">This compact electric crossover may look small, but inside lie some big
+                            aspirations.</p>
 
                         <br>
-                        <hr><br>
+                        <hr>
+                        
+                        <p><small class="text-muted">Last updated 3 mins ago</small></p>
+                        
+                        <br>
 
                         <div class="card">
                             <img src="https://cnet2.cbsistatic.com/img/NQbnesvqbzYpIge73m1qmswIENQ=/2021/03/08/3cad3e93-bf59-4d36-a56e-a115ed3399e6/audi-q4-e-tron-camo-gallery-promo.jpg"
@@ -76,7 +108,7 @@
 
                         <br><hr><br>
                         
-                        <h1 class="heading">High style, high function</h1>
+                        <h2>High style, high function</h2>
 
                         <p>Audi on Tuesday unleashed a slew of information about the upcoming Q4 E-Tron, including its camouflaged production
                         exterior. As was promised back at its concept debut, the version that will actually reach showrooms doesn't look all
