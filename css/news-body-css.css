@@ -98,15 +98,14 @@
 
 @media (min-width: 315px) and (max-width: 450px) {
     .flex-item-left .card .col-md-4 img {
-        width: 110px;
-        height: 80px;
+        width: 130px;
+        height: 90px;
     }
     .flex-item-left .card .card-body {
-        width: 240px;
+        width: 212px;
         position: relative;
-        top: -93px;
-        left: 110px;
-        border: 1px solid blueviolet;
+        top: -105px;
+        left: 130px;
     }
     .flex-item-left .card .card-body .card-title {
         font-size: large;

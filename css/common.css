@@ -5,6 +5,11 @@
 }
 
 @font-face {
+    font-family: 'Ubuntu-Bold';
+    src: url(..//fonts/Ubuntu/Ubuntu-Bold.ttf) format('woff');
+}
+
+@font-face {
     font-family: 'Julius Sans One';
     src: url(..//fonts/Julius_Sans_One/JuliusSansOne-Regular.ttf) format('woff');
 }
@@ -29,6 +34,11 @@ a, a:hover {
     font-size: 25px;
 }
 
-.card-body, .card-img-overlay, h1 {
+.card-body, .card-img-overlay {
     font-family: 'Ubuntu', sans-serif;
 }
+
+h1, h2 {
+    font-family: 'Ubuntu-Bold', sans-serif;
+}
+

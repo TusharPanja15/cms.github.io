@@ -143,9 +143,13 @@ h4:visited {
 }
 
 @media (max-width: 993px) {
-    .flex-center-left .card img {
+    .flex-center-left .card img, #one .flex-center-left .card:hover .middle-small {
         width: 129px;
         height: 129px;
+    }
+    #one .flex-center-left .card:hover .middle-small {
+        position: absolute;
+        left: 66px;
     }
 }
 
@@ -185,9 +189,14 @@ h4:visited {
         top: 150px;
         width: 350px;
     }
-    .flex-center-left .card img {
+    .flex-center-left .card img, #one .flex-center-left .card:hover .middle-small {
         width: 150px;
         height: 90px;
+    }
+    #one .flex-center-left .card:hover .middle-small {
+        position: absolute;
+        left: 75px;
+        top: 45px;
     }
 }
 
@@ -197,9 +206,14 @@ h4:visited {
         position: relative;
         top: 120px;
     }
-    .flex-center-left .card img {
+    .flex-center-left .card img, #one .flex-center-left .card:hover .middle-small {
         width: 130px;
         height: 90px;
+    }
+    #one .flex-center-left .card:hover .middle-small {
+        position: absolute;
+        left: 65px;
+        top: 45px;
     }
 }
 
@@ -301,7 +315,7 @@ h4:visited {
     text-align: center;
 }
 
-.flex-center-right .first .card:hover .middle, .flex-center-left .first .card:hover .middle-small, .flex-center-left .second .card:hover .middle-small {
+#one .flex-center-right .card:hover .middle, #one .flex-center-left .card:hover .middle-small {
     background: rgba(0, 0, 0, 0.356);
     color: white;
     opacity: 1;
@@ -324,7 +338,7 @@ h4:visited {
         height: 120px;
         position: relative;
         top: 70px;
-        left: -140px;
+        left: 10px;
     }
     #three .flex-center-right .card img {
         height: 100px;
