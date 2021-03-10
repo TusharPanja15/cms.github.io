@@ -338,7 +338,7 @@ h4:visited {
         height: 120px;
         position: relative;
         top: 70px;
-        left: 10px;
+        left: 5px;
     }
     #three .flex-center-right .card img {
         height: 100px;
@@ -349,7 +349,7 @@ h4:visited {
     #three .flex-center-right .card-body {
         position: relative;
         top: -120px;
-        left: 10px;
+        left: 50px;
         width: 240px;
         margin-bottom: -2000px;
     }
