@@ -349,7 +349,7 @@ h4:visited {
     #three .flex-center-right .card-body {
         position: relative;
         top: -120px;
-        left: 140px;
+        left: 10px;
         width: 240px;
         margin-bottom: -2000px;
     }
