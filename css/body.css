@@ -172,8 +172,7 @@ h4:visited {
 @media (max-width: 767px) {
     .flex-center-left .card {
         width: 300px;
-        height: 131px;
-        margin-left: 0px;
+        margin: 0px 0px 50px 0px !important;
     }
 }
 
@@ -190,7 +189,7 @@ h4:visited {
         width: 350px;
     }
     .flex-center-left .card img, #one .flex-center-left .card:hover .middle-small {
-        width: 150px;
+        width: 140px;
         height: 90px;
     }
     #one .flex-center-left .card:hover .middle-small {
@@ -235,10 +234,27 @@ h4:visited {
         display: none
     }
     .flex-center-left .card .card-body {
+        width: 240px;
+        position: absolute;
+        top: -20px;
+        left: 175px;
+    }
+}
+
+@media (max-width: 315px) {
+    .header-img-content {
         position: relative;
-        top: -100px;
-        left: 200px;
-        width: 280px;
+        top: 150px;
+        width: 350px;
+    }
+    .header-img-content p {
+        display: none
+    }
+    .flex-center-left .card .card-body {
+        position: absolute;
+        top: -10px;
+        left: 175px;
+        width: 240px;
     }
 }
 
@@ -337,24 +353,24 @@ h4:visited {
         width: 300px;
         height: 120px;
         position: relative;
-        top: 70px;
+        top: -20px;
         left: 10px;
+        margin-bottom: 20px;
     }
     #three .flex-center-right .card img {
-        height: 100px;
-        width: 140px;
+        height: 90px;
+        width: 130px;
         position: relative;
         left: -10px;
     }
     #three .flex-center-right .card-body {
-        position: relative;
-        top: -120px;
-        left: 140px !important;
-        width: 240px;
-        margin-bottom: -2000px;
+        position: absolute;
+        top: -20px;
+        left: 115px !important;
+        width: 210px;
     }
     #one .flex-center-left .card-body {
-        width: 240px;
+        width: 210px;
     }
     #three .flex-center-right .card .card-hidden {
         display: none;
