@@ -1,6 +1,6 @@
 .crop-height {
     /* max-width: 1200px; /* native or declared width of img src (if known) */
-    max-height: 600px;
+    max-height: 700px;
     overflow: hidden;
 }
 
@@ -97,8 +97,6 @@ figcaption {
 }
 
 .header-container {
-    position: relative;
-    top: 84px;
 }
 
 @media (max-width: 728px) {

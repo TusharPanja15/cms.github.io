@@ -14,31 +14,28 @@
     <link rel="stylesheet" href="../css/common.css">
 
     <style type="text/css">
+        .flex-container {
+            display: flex;
+            flex-wrap: wrap;
+            position: relative;
+            top: 150px;
+            height: 100%;
+            margin-bottom: 200px;
+        }
 
-    .flex-container {
-    display: flex;
-    flex-wrap: wrap;
-    position: relative;
-    top: 150px;
-    height: 100%;
-    margin-bottom: 200px;
-}
+        .flex-item-left {
+            flex: 0%;
+        }
 
-.flex-item-left {
-    flex: 0%;
-}
+        .flex-item-center {
+            padding: 10px;
+            flex: 50%;
+        }
 
-.flex-item-center {
-    padding: 10px;
-    flex: 50%;
-}
-
-.flex-item-right {
-    padding: 10px;
-    flex: 25%;
-}
-
-
+        .flex-item-right {
+            padding: 10px;
+            flex: 25%;
+        }
 
         p {
             font-size: 20px;
@@ -47,6 +44,12 @@
         small {
             font-size: 18px;
             font-style: italic;
+        }
+
+        @media (max-width: 992px) {
+            .flex-item-right {
+                display: none;
+            }
         }
     </style>
 
@@ -78,9 +81,9 @@
 
                         <br>
                         <hr>
-                        
+
                         <p><small class="text-muted">Last updated 3 mins ago</small></p>
-                        
+
                         <br>
 
                         <div class="card">
@@ -89,7 +92,8 @@
                             <p class="card-text"><small> &copy; copyright</small></p>
                         </div>
 
-                        <br><hr><br>
+                        <br>
+                        <hr><br>
 
                         <p>The Audi Q4 E-Tron compact electric SUV first debuted at the 2019
                             Geneva Motor Show, and… frankly, a whole lot has
@@ -101,59 +105,89 @@
                             little
                             EV will be, whether it involves the windshield or just some cup holders.</p>
 
-                        <br><hr><br>
+                        <br>
+                        <hr><br>
 
                         <img src="https://mondrian.mashable.com/lead-img-audi-q4-sportback-e-tron.jpg" class="card-img">
                         <p><small>Audi Q4 E-Tron has neat new cup holders and AR on the windshield</small></p>
 
-                        <br><hr><br>
-                        
+                        <br>
+                        <hr><br>
+
                         <h2>High style, high function</h2>
 
-                        <p>Audi on Tuesday unleashed a slew of information about the upcoming Q4 E-Tron, including its camouflaged production
-                        exterior. As was promised back at its concept debut, the version that will actually reach showrooms doesn't look all
-                        that different from what was seen at the last Geneva show. Its compact proportions are a little on the stubby side,
-                        thanks to a wheelbase of about 9.1 feet, but all that space between the wheels means the interior is much larger --
-                        about that of an Audi Q7, and its cargo area offers as much space as the segment above this one. If you're familiar with
-                        any of Audi's other E-Tron models, the styling shouldn't come as much of a surprise.
-                        
-                        <br><br>
+                        <p>Audi on Tuesday unleashed a slew of information about the upcoming Q4 E-Tron, including its
+                            camouflaged production
+                            exterior. As was promised back at its concept debut, the version that will actually reach
+                            showrooms doesn't look all
+                            that different from what was seen at the last Geneva show. Its compact proportions are a
+                            little on the stubby side,
+                            thanks to a wheelbase of about 9.1 feet, but all that space between the wheels means the
+                            interior is much larger --
+                            about that of an Audi Q7, and its cargo area offers as much space as the segment above this
+                            one. If you're familiar with
+                            any of Audi's other E-Tron models, the styling shouldn't come as much of a surprise.
 
-                        The exterior teasers are just a small part of what Audi offered up. Most of the focus was placed on the Q4 E-Tron's
-                        interior. Thanks to a flat load floor and by-wire controls for the transmission, the Q4 E-Tron's center console is like
-                        nothing else Audi makes, with a higher protuberance containing the start button and transmission controls, leaving gobs
-                        of space underneath for wireless device charging, USB-C ports and a pair of cup holders, with a traditional
-                        under-armrest cubby hanging out between the seats, as well. Speaking of beverage storage, all four door panels have a
-                        unique high-mounted bottle holder just ahead of the window switches for easier access to drinks measuring up to 1 liter.</p>
+                            <br><br>
 
-                        <br><hr><br>
+                            The exterior teasers are just a small part of what Audi offered up. Most of the focus was
+                            placed on the Q4 E-Tron's
+                            interior. Thanks to a flat load floor and by-wire controls for the transmission, the Q4
+                            E-Tron's center console is like
+                            nothing else Audi makes, with a higher protuberance containing the start button and
+                            transmission controls, leaving gobs
+                            of space underneath for wireless device charging, USB-C ports and a pair of cup holders,
+                            with a traditional
+                            under-armrest cubby hanging out between the seats, as well. Speaking of beverage storage,
+                            all four door panels have a
+                            unique high-mounted bottle holder just ahead of the window switches for easier access to
+                            drinks measuring up to 1 liter.
+                        </p>
 
-                        <img src="https://cnet3.cbsistatic.com/img/UKrh7sHJnKs6Tt8J2qhbYVZc9Ww=/532x299/2021/03/08/b420b847-2254-4b17-9e49-aba5084639fb/audi-q4-e-tron-hud-001.jpg" class="card-img">
+                        <br>
+                        <hr><br>
+
+                        <img src="https://cnet3.cbsistatic.com/img/UKrh7sHJnKs6Tt8J2qhbYVZc9Ww=/532x299/2021/03/08/b420b847-2254-4b17-9e49-aba5084639fb/audi-q4-e-tron-hud-001.jpg"
+                            class="card-img">
                         <p><small>Audi Q4 E-Tron has neat new cup holders and AR on the windshield</small></p>
 
-                        <br><hr><br>
+                        <br>
+                        <hr><br>
 
-                        <p>The HUD is split into two sections. The primary head-up display area covers the usual stuff like vehicle speed, as well
-                        as speed limit and driver-assist information, at a perceived distance to the driver of about 10 feet. The AR segment can
-                        show turning arrows, navigation destinations and a green line to denote the position of the vehicle ahead, and all that
-                        stuff is displayed at a perceived distance of about 33 feet, so that the driver can clearly differentiate between the
-                        two kinds of information being sent their way.
+                        <p>The HUD is split into two sections. The primary head-up display area covers the usual stuff
+                            like vehicle speed, as well
+                            as speed limit and driver-assist information, at a perceived distance to the driver of about
+                            10 feet. The AR segment can
+                            show turning arrows, navigation destinations and a green line to denote the position of the
+                            vehicle ahead, and all that
+                            stuff is displayed at a perceived distance of about 33 feet, so that the driver can clearly
+                            differentiate between the
+                            two kinds of information being sent their way.
 
-                        <br><br>
-                        
-                        It's quite the complicated dance to get this all to work. A picture generation unit tucked into the dashboard uses a
-                        bright LCD screen that projects onto two different mirrors, which bounce off a concave mirror to display on two separate
-                        areas of the windshield -- the "near" and "far" portions mentioned earlier. Cameras, radar sensors and GPS provide data
-                        to the Q4 E-Tron's computers, which calculate where to place AR objects and how to reposition them in the event of
-                        braking, potholes or any other occurrences that may cause the vehicle to move unexpectedly. Some 600,000 lines of code
-                        are required to pull it off. It's impressive stuff, and we can't wait to see how it works in person.
+                            <br><br>
 
-                        <br><br>
-                        
-                        We don't have to wait too much longer to see the whole shebang. Audi intends to unveil the Q4 E-Tron in its full
-                        production guise in April.</p>
+                            It's quite the complicated dance to get this all to work. A picture generation unit tucked
+                            into the dashboard uses a
+                            bright LCD screen that projects onto two different mirrors, which bounce off a concave
+                            mirror to display on two separate
+                            areas of the windshield -- the "near" and "far" portions mentioned earlier. Cameras, radar
+                            sensors and GPS provide data
+                            to the Q4 E-Tron's computers, which calculate where to place AR objects and how to
+                            reposition them in the event of
+                            braking, potholes or any other occurrences that may cause the vehicle to move unexpectedly.
+                            Some 600,000 lines of code
+                            are required to pull it off. It's impressive stuff, and we can't wait to see how it works in
+                            person.
 
-                        <br><hr><br>
+                            <br><br>
+
+                            We don't have to wait too much longer to see the whole shebang. Audi intends to unveil the
+                            Q4 E-Tron in its full
+                            production guise in April.
+                        </p>
+
+                        <br>
+                        <hr><br>
 
                     </div>
 

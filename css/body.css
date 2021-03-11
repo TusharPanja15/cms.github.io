@@ -216,15 +216,6 @@ h4:visited {
     }
 }
 
-@media (max-width: 450px) {
-    .header-img-content {
-        width: 100px;
-    }
-    .header-img-container {
-        width: 450px;
-    }
-}
-
 @media (max-width: 553px) {
     .header-img-content {
         position: relative;
@@ -232,6 +223,21 @@ h4:visited {
     }
     .header-img-content p {
         display: none
+    }
+    .flex-center-left .card .card-body {
+        width: 240px;
+        position: absolute;
+        top: -20px;
+        left: 190px;
+    }
+}
+
+@media (max-width: 450px) {
+    .header-img-content {
+        width: 100px;
+    }
+    .header-img-container {
+        width: 450px;
     }
     .flex-center-left .card .card-body {
         width: 240px;
