@@ -253,7 +253,7 @@ h4:visited {
 
 @media (max-width: 444px) {
     .flex-center-right .card .card-body {
-        width: 380px;
+        width: 350px;
     }
 }
 
@@ -525,4 +525,8 @@ h4:visited {
     .flex-item-center .flex-center-left .third {
         order: 6;
     }
+}
+
+.card {
+    border: 1px solid blueviolet !important;
 }
