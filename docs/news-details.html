@@ -13,28 +13,116 @@
     <!--External Custom CSS-->
     <link rel="stylesheet" href="../css/common.css">
 
+    <!-- Font Awesome Icon Library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <style type="text/css">
-        .flex-container {
+        #one .flex-container,
+        #two .flex-container,
+        #three .flex-container,
+        #four .flex-container {
             display: flex;
             flex-wrap: wrap;
-            position: relative;
-            top: 150px;
             height: 100%;
             margin-bottom: 200px;
+            position: relative;
         }
 
-        .flex-item-left {
+        #one .flex-container {
+            top: 150px;
+        }
+
+        #two .flex-container {
+            top: 10px;
+            margin-bottom: 50px;
+        }
+
+        #three .flex-container {
+            top: 10px;
+            margin-bottom: 20px;
+        }
+
+        #four .flex-container {
+            top: 50px;
+        }
+
+        #one .flex-item-left,
+        #two .flex-item-left,
+        #three .flex-item-left,
+        #four .flex-item-left {
             flex: 0%;
+            /* background-color: crimson; */
         }
 
-        .flex-item-center {
-            padding: 10px;
-            flex: 50%;
+        #one .flex-item-center,
+        #two .flex-item-center,
+        #three .flex-item-center,
+        #four .flex-item-center {
+            padding: 20px 80px 20px 0px;
+            flex: 60%;
+            text-align: justify;
+            /* background-color: coral; */
         }
 
-        .flex-item-right {
+        #one .flex-item-right,
+        #two .flex-item-right,
+        #three .flex-item-right,
+        #four .flex-item-right {
             padding: 10px;
-            flex: 25%;
+            flex: 20%;
+            /* background-color: cornflowerblue; */
+        }
+
+        #one .flex-item-right {
+            margin-top: 150px;
+        }
+
+        #one .flex-item-right .card img {
+            width: 140px;
+            height: 90px;
+            position: absolute;
+            top: 20px;
+        }
+
+        #one>.card-body {}
+
+        #two table td {
+            padding: 8px;
+        }
+
+        #two table td .progress {
+            width: 500px;
+        }
+
+        #two table,
+        #two .flex-item-center .flex-container #avgRating {
+            position: relative;
+            top: -10px;
+            left: 10px;
+            width: 208px;
+            text-align: center;
+        }
+
+        #two .flex-item-center .flex-container #avgRating .checked {
+            color: orangered;
+        }
+
+        #three .flex-item-center form {
+            margin-top: 40px;
+        }
+
+        #four .flex-item-center .card {
+            width: 85%;
+        }
+
+        #four .flex-center-item {
+            padding: 5px;
+            margin: 0px 0px -150px 0px;
+            flex: 33%;
+        }
+
+        .card {
+            border: none;
         }
 
         p {
@@ -42,13 +130,46 @@
         }
 
         small {
-            font-size: 18px;
+            font-size: 15px;
             font-style: italic;
         }
 
+        @font-face {
+            font-family: 'Ubuntu';
+            src: url(..//fonts/Ubuntu/Ubuntu-Regular.ttf) format('woff');
+        }
+
+        h1,
+        h5 {
+            font-family: 'Ubuntu-Bold', sans-serif;
+        }
+
         @media (max-width: 992px) {
-            .flex-item-left, .flex-item-right {
+
+            #one .flex-item-left,
+            #one .flex-item-right,
+            #two .flex-item-left,
+            #two .flex-item-right,
+            #three .flex-item-left,
+            #three .flex-item-right,
+            #four .flex-item-left,
+            #four .flex-item-right {
                 display: none;
+            }
+
+            #one .flex-item-center,
+            #two .flex-item-center,
+            #three .flex-item-center,
+            #four .flex-item-center {
+
+                margin: 0px -80px 0px 0px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            
+            #two .flex-item-center .flex-container table .progress {
+                width: 300px;
             }
         }
     </style>
@@ -61,9 +182,12 @@
     <!-- NAV BARS -->
     <nav id="navs"></nav>
 
-    <br><br><br><br><br><br><br><br>
 
-    <section>
+    <br><br>
+
+
+    <!-- ARTICLE CONTENT & LATEST ARTICLES -->
+    <section id="one">
         <div class="container">
             <div class="flex-container">
 
@@ -72,7 +196,7 @@
 
                 <div class="flex-item-center">
 
-                    <div class="col">
+                    <div>
                         <h1 class="display-5">Audi Q4 E-Tron electric SUV promises AR head-up display, clever storage
                         </h1>
                         <br><br>
@@ -154,7 +278,7 @@
                         <br>
                         <hr><br>
 
-                        <p>The HUD is split into two sections. The primary head-up display area covers the usual stuff
+                        <p>The HUD is split into four sections. The primary head-up display area covers the usual stuff
                             like vehicle speed, as well
                             as speed limit and driver-assist information, at a perceived distance to the driver of about
                             10 feet. The AR segment can
@@ -162,7 +286,7 @@
                             vehicle ahead, and all that
                             stuff is displayed at a perceived distance of about 33 feet, so that the driver can clearly
                             differentiate between the
-                            two kinds of information being sent their way.
+                            four kinds of information being sent their way.
 
                             <br><br>
 
@@ -186,26 +310,324 @@
                             production guise in April.
                         </p>
 
-                        <br>
-                        <hr><br>
-
                     </div>
 
+                    <button onclick="myFunction()">Try it</button>
+                                                <div id="demo"></div>
+                
                 </div>
 
                 <div class="flex-item-right">
-                    <div class="more-button d-grid gap-2 col-6 mx-auto">
-                        <button class="btn btn-outline-warning" type="button" id="back">Back</button>
-                    </div>
 
-                    <!-- <button onclick="myFunction()">Try it</button>
-                            <div id="demo"></div> -->
+                    <!-- <div class="more-button d-grid gap-2 col-6 mx-auto">
+                        <button class="btn btn-outline-warning" type="button" id="back">Back</button>
+                    </div> -->
+
+                    <h1 class="heading">LATEST STORIES</h1><br>
+
+                    <div class="container">
+
+                        <div class="row">
+
+                            <div class="card mb-3">
+                                <div class="row g-0">
+                                    <div class="col-md-8">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Audi Q4 E-Tron electric SUV promises AR head-up
+                                                display, clever storage</h5>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <img
+                                            src="https://cnet2.cbsistatic.com/img/NQbnesvqbzYpIge73m1qmswIENQ=/2021/03/08/3cad3e93-bf59-4d36-a56e-a115ed3399e6/audi-q4-e-tron-camo-gallery-promo.jpg">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card mb-3">
+                                <div class="row g-0">
+                                    <div class="col-md-8">
+                                        <div class="card-body">
+                                            <h5 class="card-title">How Do Autopilot Systems Work?</h5>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <img
+                                            src="https://cnet2.cbsistatic.com/img/NQbnesvqbzYpIge73m1qmswIENQ=/2021/03/08/3cad3e93-bf59-4d36-a56e-a115ed3399e6/audi-q4-e-tron-camo-gallery-promo.jpg">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card mb-3">
+                                <div class="row g-0">
+                                    <div class="col-md-8">
+                                        <div class="card-body">
+                                            <h5 class="card-title">A technology that’s changed little in over a century
+                                            </h5>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <img
+                                            src="https://cnet2.cbsistatic.com/img/NQbnesvqbzYpIge73m1qmswIENQ=/2021/03/08/3cad3e93-bf59-4d36-a56e-a115ed3399e6/audi-q4-e-tron-camo-gallery-promo.jpg">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card mb-3">
+                                <div class="row g-0">
+                                    <div class="col-md-8">
+                                        <div class="card-body">
+                                            <h5 class="card-title">How much does the autopilot actually fly?</h5>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <img
+                                            src="https://cnet2.cbsistatic.com/img/NQbnesvqbzYpIge73m1qmswIENQ=/2021/03/08/3cad3e93-bf59-4d36-a56e-a115ed3399e6/audi-q4-e-tron-camo-gallery-promo.jpg">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card mb-3">
+                                <div class="row g-0">
+                                    <div class="col-md-8">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Card title</h5>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <img
+                                            src="https://cnet2.cbsistatic.com/img/NQbnesvqbzYpIge73m1qmswIENQ=/2021/03/08/3cad3e93-bf59-4d36-a56e-a115ed3399e6/audi-q4-e-tron-camo-gallery-promo.jpg">
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
 
                 </div>
 
             </div>
         </div>
     </section>
+
+
+    <!-- RATINGS -->
+    <section id="two">
+        <div class="container">
+            <div class="flex-container">
+
+                <div class="flex-item-left"></div>
+
+                <div class="flex-item-center">
+                    <hr>
+                    <div class="flex-container">
+                        <h1 class="heading">RATINGS</h1>
+                        <div>
+                            <div class="row">
+                                <div class="col" id="avgRating">
+                                    <p class="display-1">4.1</p>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                    <p><small>12099</small></p>
+                                </div>
+
+                                <div class="col">
+
+                                    <table>
+                                        <tr>
+                                            <td>5</td>
+                                            <td>
+                                                <div class="progress">
+                                                    <div class="progress-bar bg-success" role="progressbar"
+                                                        style="width: 85%" aria-valuenow="25" aria-valuemin="0"
+                                                        aria-valuemax="100"></div>
+                                                </div>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>4</td>
+                                            <td>
+                                                <div class="progress">
+                                                    <div class="progress-bar bg-primary" role="progressbar"
+                                                        style="width: 25%" aria-valuenow="25" aria-valuemin="0"
+                                                        aria-valuemax="100"></div>
+                                                </div>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>3</td>
+                                            <td>
+                                                <div class="progress">
+                                                    <div class="progress-bar bg-info" role="progressbar"
+                                                        style="width: 50%" aria-valuenow="50" aria-valuemin="0"
+                                                        aria-valuemax="100"></div>
+                                                </div>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>2</td>
+                                            <td>
+                                                <div class="progress">
+                                                    <div class="progress-bar bg-warning" role="progressbar"
+                                                        style="width: 75%" aria-valuenow="75" aria-valuemin="0"
+                                                        aria-valuemax="100"></div>
+                                                </div>
+
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>1</td>
+                                            <td>
+                                                <div class="progress">
+                                                    <div class="progress-bar bg-danger" role="progressbar"
+                                                        style="width: 100%" aria-valuenow="100" aria-valuemin="0"
+                                                        aria-valuemax="100"></div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </table>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="flex-item-right"></div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- REVIEWS -->
+    <section id="three">
+        <div class="container">
+            <div class="flex-container">
+
+                <div class="flex-item-left"></div>
+
+                <div class="flex-item-center">
+                    <hr><br>
+                    <h1 class="heading">REVIEWS</h1>
+
+                    <form>
+                        <div class="mb-3">
+                            <input type="email" class="form-control" id="exampleFormControlInput1"
+                                placeholder="Your Name">
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                                placeholder="What do you think?"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+
+                </div>
+
+                <div class="flex-item-right"></div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- RELATED ARTICLES -->
+    <section id="four">
+        <div class="container">
+            <div class="flex-container">
+
+                <div class="flex-item-left"></div>
+
+                <div class="flex-item-center">
+                    <hr><br>
+                    <h1 class="heading">RELATED STORIES:</h1>
+                    <div class="flex-container">
+
+                        <div class="flex-center-item">
+                            <div class="card">
+                                <img src="https://simpleflying.com/wp-content/uploads/2021/03/PILOTS-IN-THE-COCKPIT-OF-A330-QATAR-MSN871-002-800x533.jpeg"
+                                    class="card-img-top">
+                                <div class="card-body">
+                                    <h5 class="card-title">Audi Q4 E-Tron electric SUV promises AR head-up
+                                        display, clever storage</h5>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flex-center-item">
+                            <div class="card">
+                                <img src="https://simpleflying.com/wp-content/uploads/2021/03/PILOTS-IN-THE-COCKPIT-OF-A330-QATAR-MSN871-002-800x533.jpeg"
+                                    class="card-img-top">
+                                <div class="card-body">
+                                    <h5 class="card-title">Audi Q4 E-Tron electric SUV promises AR head-up
+                                        display, clever storage</h5>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flex-center-item">
+                            <div class="card">
+                                <img src="https://simpleflying.com/wp-content/uploads/2021/03/PILOTS-IN-THE-COCKPIT-OF-A330-QATAR-MSN871-002-800x533.jpeg"
+                                    class="card-img-top">
+                                <div class="card-body">
+                                    <h5 class="card-title">Audi Q4 E-Tron electric SUV promises AR head-up
+                                        display, clever storage</h5>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flex-center-item">
+                            <div class="card">
+                                <img src="https://simpleflying.com/wp-content/uploads/2021/03/PILOTS-IN-THE-COCKPIT-OF-A330-QATAR-MSN871-002-800x533.jpeg"
+                                    class="card-img-top">
+                                <div class="card-body">
+                                    <h5 class="card-title">Audi Q4 E-Tron electric SUV promises AR head-up
+                                        display, clever storage</h5>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flex-center-item">
+                            <div class="card">
+                                <img src="https://simpleflying.com/wp-content/uploads/2021/03/PILOTS-IN-THE-COCKPIT-OF-A330-QATAR-MSN871-002-800x533.jpeg"
+                                    class="card-img-top">
+                                <div class="card-body">
+                                    <h5 class="card-title">Audi Q4 E-Tron electric SUV promises AR head-up
+                                        display, clever storage</h5>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flex-center-item">
+                            <div class="card">
+                                <img src="https://simpleflying.com/wp-content/uploads/2021/03/PILOTS-IN-THE-COCKPIT-OF-A330-QATAR-MSN871-002-800x533.jpeg"
+                                    class="card-img-top">
+                                <div class="card-body">
+                                    <h5 class="card-title">Audi Q4 E-Tron electric SUV promises AR head-up
+                                        display, clever storage</h5>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="flex-item-right"></div>
+
+            </div>
+        </div>
+    </section>
+
 
     <!-- FOOTER -->
     <footer id="footer"></footer>
