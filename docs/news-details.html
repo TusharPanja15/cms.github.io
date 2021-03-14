@@ -25,6 +25,21 @@
             margin: 0 auto;
         }
 
+        @font-face {
+            font-family: 'Ubuntu';
+            src: url(..//fonts/Ubuntu/Ubuntu-Regular.ttf) format('woff');
+        }
+
+        h1,
+        h5 {
+            font-family: 'Ubuntu-Bold', sans-serif;
+        }
+
+
+        .card {
+            border: none;
+        }
+
         #one .flex-container,
         #two .flex-container,
         #three .flex-container,
@@ -40,11 +55,7 @@
             top: 150px;
         }
 
-        #two .flex-container {
-            top: 10px;
-            margin-bottom: 50px;
-        }
-
+        #two .flex-container,
         #three .flex-container {
             top: 10px;
             margin-bottom: 20px;
@@ -82,17 +93,52 @@
         }
 
         #one .flex-item-right {
-            margin-top: 150px;
+            margin-top: 100px;
+        }
+
+        #one .flex-item-right .card {
+            margin-left: -10px;
+            position: relative;
         }
 
         #one .flex-item-right .card img {
-            width: 140px;
+            width: 120px;
             height: 90px;
             position: absolute;
             top: 20px;
         }
 
         #one>.card-body {}
+
+        #one .flex-item-center p {
+            font-size: 20px;
+        }
+
+        #one .flex-item-center .img-refrence {
+            font-size: 15px;
+            font-style: italic;
+        }
+
+        #one .flex-item-center #advertisement,
+        #one .flex-item-right #advertisement,
+        #two .flex-item-right #advertisement {
+            font-size: 14px;
+            font-style: normal;
+            text-align: center;
+        }
+
+        #one .flex-item-center #advertisement img,
+        #one .flex-item-right #advertisement img,
+        #two .flex-item-right #advertisement img {
+            width: 90%;
+            height: auto;
+            margin: 0 auto;
+        }
+
+        #two .flex-item-right #advertisement {
+            position: -webkit-sticky !important;
+            position: sticky !important;
+        }
 
         #two table td {
             padding: 8px;
@@ -129,6 +175,7 @@
             flex: 33%;
         }
 
+
         @media (max-width: 768px) {
             #four .flex-center-item {
                 padding: 5px;
@@ -159,29 +206,6 @@
             #four .flex-item-center .card {
                 width: 94%;
             }
-        }
-
-        .card {
-            border: none;
-        }
-
-        p {
-            font-size: 20px;
-        }
-
-        small {
-            font-size: 15px;
-            font-style: italic;
-        }
-
-        @font-face {
-            font-family: 'Ubuntu';
-            src: url(..//fonts/Ubuntu/Ubuntu-Regular.ttf) format('woff');
-        }
-
-        h1,
-        h5 {
-            font-family: 'Ubuntu-Bold', sans-serif;
         }
 
         @media (max-width: 1055px) {
@@ -219,7 +243,6 @@
         @media (min-width: 767px) and (max-width: 1055px) {
             #two table {
                 width: 300px;
-
             }
 
             #two .flex-item-center .flex-container #avgRating {
@@ -285,25 +308,42 @@
                     <div>
                         <h1 class="display-5">Audi Q4 E-Tron electric SUV promises AR head-up display, clever storage
                         </h1>
-                        <br><br>
-                        <p class="display-6">This compact electric crossover may look small, but inside lie some big
-                            aspirations.</p>
+
+                        <br>
+
+                        <p>
+                            <small class="img-refrence text-muted">Last updated 3 mins ago</small>
+                        </p>
+
+                        <br>
+
+
+                        <!-- Advertisement -->
+                        <div class="row" id="advertisement">
+                            <small>Advertisement:</small>
+                            <div class="card">
+                                <img src="..//img/add3.jpg">
+                            </div>
+                        </div>
+
+                        <br>
+
+                        <p class="display-6">This compact electric crossover may look small, but inside lie some
+                            bigaspirations.</p>
 
                         <br>
                         <hr>
-
-                        <p><small class="text-muted">Last updated 3 mins ago</small></p>
-
                         <br>
 
                         <div class="card">
                             <img src="https://cnet2.cbsistatic.com/img/NQbnesvqbzYpIge73m1qmswIENQ=/2021/03/08/3cad3e93-bf59-4d36-a56e-a115ed3399e6/audi-q4-e-tron-camo-gallery-promo.jpg"
                                 class="card-img">
-                            <p class="card-text"><small> &copy; copyright</small></p>
+                            <p class="card-text"><small class="img-refrence"> &copy; copyright</small></p>
                         </div>
 
                         <br>
-                        <hr><br>
+                        <hr>
+                        <br>
 
                         <p>The Audi Q4 E-Tron compact electric SUV first debuted at the 2019
                             Geneva Motor Show, and… frankly, a whole lot has
@@ -316,13 +356,30 @@
                             EV will be, whether it involves the windshield or just some cup holders.</p>
 
                         <br>
-                        <hr><br>
+
+
+                        <!-- Advertisement -->
+                        <div class="row" id="advertisement">
+                            <small>Advertisement:</small>
+                            <div class="card">
+                                <img src="..//img/add3.jpg">
+                            </div>
+                        </div>
+
+                        <hr>
+                        <br>
 
                         <img src="https://mondrian.mashable.com/lead-img-audi-q4-sportback-e-tron.jpg" class="card-img">
-                        <p><small>Audi Q4 E-Tron has neat new cup holders and AR on the windshield</small></p>
+
+                        <p>
+                            <small class="img-refrence">Audi Q4 E-Tron has neat new cup holders and AR on the
+                                windshield</small>
+                        </p>
 
                         <br>
-                        <hr><br>
+                        <hr>
+                        <br>
+                        <br>
 
                         <h2>High style, high function</h2>
 
@@ -338,7 +395,8 @@
                             one. If you're familiar with
                             any of Audi's other E-Tron models, the styling shouldn't come as much of a surprise.
 
-                            <br><br>
+                            <br>
+                            <br>
 
                             The exterior teasers are just a small part of what Audi offered up. Most of the focus was
                             placed on the Q4 E-Tron's
@@ -355,14 +413,29 @@
                         </p>
 
                         <br>
-                        <hr><br>
+
+
+                        <!-- Advertisement -->
+                        <div class="row" id="advertisement">
+                            <small>Advertisement:</small>
+                            <div class="card">
+                                <img src="..//img/add3.jpg">
+                            </div>
+                        </div>
+
+                        <hr>
+                        <br>
 
                         <img src="https://cnet3.cbsistatic.com/img/UKrh7sHJnKs6Tt8J2qhbYVZc9Ww=/532x299/2021/03/08/b420b847-2254-4b17-9e49-aba5084639fb/audi-q4-e-tron-hud-001.jpg"
                             class="card-img">
-                        <p><small>Audi Q4 E-Tron has neat new cup holders and AR on the windshield</small></p>
+                        <p>
+                            <small class="img-refrence">Audi Q4 E-Tron has neat new cup holders and AR on the
+                                windshield</small>
+                        </p>
 
                         <br>
-                        <hr><br>
+                        <hr>
+                        <br>
 
                         <p>The HUD is split into four sections. The primary head-up display area covers the usual stuff
                             like vehicle speed, as well
@@ -374,7 +447,8 @@
                             differentiate between the
                             four kinds of information being sent their way.
 
-                            <br><br>
+                            <br>
+                            <br>
 
                             It's quite the complicated dance to get this all to work. A picture generation unit tucked
                             into the dashboard uses a
@@ -389,17 +463,27 @@
                             are required to pull it off. It's impressive stuff, and we can't wait to see how it works in
                             person.
 
-                            <br><br>
+                            <br>
+                            <br>
 
                             We don't have to wait too much longer to see the whole shebang. Audi intends to unveil the
                             Q4 E-Tron in its full
                             production guise in April.
                         </p>
 
-                    </div>
+                        <br>
+                        <br>
 
-                    <button onclick="myFunction()">Try it</button>
-                    <div id="demo"></div>
+
+                        <!-- Advertisement -->
+                        <div class="row" id="advertisement">
+                            <small>Advertisement:</small>
+                            <div class="card">
+                                <img src="..//img/add3.jpg">
+                            </div>
+                        </div>
+
+                    </div>
 
                 </div>
 
@@ -487,6 +571,16 @@
                                 </div>
                             </div>
 
+                        </div>
+
+                        <br><br><br><br><br><br>
+
+                        <!-- Advertisement -->
+                        <div class="row" id="advertisement">
+                            <small>Advertisement:</small>
+                            <div class="card">
+                                <img src="..//img/add2.jpg">
+                            </div>
                         </div>
 
                     </div>
@@ -588,7 +682,17 @@
 
                 </div>
 
-                <div class="flex-item-right"></div>
+                <div class="flex-item-right">
+
+                    <!-- Advertisement -->
+                    <div class="row" id="advertisement">
+                        <small>Advertisement:</small>
+                        <div class="card">
+                            <img src="..//img/add1.jpg">
+                        </div>
+                    </div>
+
+                </div>
 
             </div>
         </div>
