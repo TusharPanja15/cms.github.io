@@ -17,6 +17,15 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <style type="text/css">
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0 auto;
+        }
+
         #one .flex-container,
         #two .flex-container,
         #three .flex-container,
@@ -99,8 +108,9 @@
             position: relative;
             top: -10px;
             left: 10px;
-            width: 208px;
+            width: 200px;
             text-align: center;
+            border: 1px solid cadetblue;
         }
 
         #two .flex-item-center .flex-container #avgRating .checked {
@@ -144,7 +154,7 @@
             font-family: 'Ubuntu-Bold', sans-serif;
         }
 
-        @media (max-width: 992px) {
+        @media (max-width: 1055px) {
 
             #one .flex-item-left,
             #one .flex-item-right,
@@ -161,15 +171,58 @@
             #two .flex-item-center,
             #three .flex-item-center,
             #four .flex-item-center {
-
-                margin: 0px -80px 0px 0px;
+                margin: 0px 0px 0px 0px;
+                padding-right: 0px;
             }
         }
 
-        @media (max-width: 768px) {
-            
+        @media (max-width: 1199px) {
             #two .flex-item-center .flex-container table .progress {
+                width: 320px;
+            }
+            #two .flex-item-center .flex-container #avgRating {
+                width: 150px;
+            }
+        }
+
+        @media (min-width: 767px) and (max-width: 1055px) {
+            #two table {
                 width: 300px;
+                
+            }
+            #two .flex-item-center .flex-container #avgRating {
+                width: 120px;
+            }
+
+            #two .flex-item-center .flex-container #avgRating,
+            #two table {
+                margin: 80px 0px -80px 0px;
+            }
+        }
+
+        @media (max-width: 767px) {
+            #two table,
+            #two .flex-item-center .flex-container table .progress {
+                width: 200px;
+            }
+
+            #two .flex-item-center .flex-container #avgRating {
+                width: 130px;
+                margin: 80px 0px -80px -40px;
+            }
+
+            #two table {
+                margin: 80px 0px -80px 0px;
+            }
+        }
+
+        @media (max-width: 505px) {
+            #two .flex-item-center .flex-container #avgRating {
+                margin: 0px 0px -80px 40px;
+            }
+
+            #two table {
+                margin: 0px 0px -80px 0px;
             }
         }
     </style>
