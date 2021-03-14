@@ -17,7 +17,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <style type="text/css">
-
         * {
             box-sizing: border-box;
         }
@@ -109,7 +108,7 @@
             top: -10px;
             left: 10px;
             width: 200px;
-            text-align: center; 
+            text-align: center;
         }
 
         #two .flex-item-center .flex-container #avgRating .checked {
@@ -132,23 +131,34 @@
 
         @media (max-width: 768px) {
             #four .flex-center-item {
-            padding: 5px;
-            margin: 0px -40px -100px 0px;
-            flex: 50%;
-        }
+                padding: 5px;
+                margin: 0px -40px -100px 0px;
+                flex: 50%;
+            }
         }
 
         @media (max-width: 615px) {
             #four .flex-center-item {
-            padding: 5px;
-            margin: 0px -40px -100px 0px;
-            flex: 43%;
+                padding: 5px;
+                margin: 0px -10px -100px 0px;
+                flex: 43%;
+            }
+
+            #four .flex-item-center .card {
+                width: 90%;
+            }
         }
 
-        
-        #four .flex-item-center .card {
-            width: 65%;
-        }
+        @media (min-width: 353px) and (max-width: 520px) {
+            #four .flex-center-item {
+                padding: 5px;
+                margin: 0px -10px -100px 0px;
+                flex: 50%;
+            }
+
+            #four .flex-item-center .card {
+                width: 94%;
+            }
         }
 
         .card {
@@ -200,6 +210,7 @@
             #two .flex-item-center .flex-container table .progress {
                 width: 320px;
             }
+
             #two .flex-item-center .flex-container #avgRating {
                 width: 150px;
             }
@@ -208,8 +219,9 @@
         @media (min-width: 767px) and (max-width: 1055px) {
             #two table {
                 width: 300px;
-                
+
             }
+
             #two .flex-item-center .flex-container #avgRating {
                 width: 120px;
             }
@@ -221,6 +233,7 @@
         }
 
         @media (max-width: 767px) {
+
             #two table,
             #two .flex-item-center .flex-container table .progress {
                 width: 200px;
@@ -386,8 +399,8 @@
                     </div>
 
                     <button onclick="myFunction()">Try it</button>
-                                                <div id="demo"></div>
-                
+                    <div id="demo"></div>
+
                 </div>
 
                 <div class="flex-item-right">
