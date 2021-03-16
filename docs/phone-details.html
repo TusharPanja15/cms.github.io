@@ -80,10 +80,18 @@
             position: relative;
             top: 150px;
             border-collapse: separate;
-            border: solid #d3d3d388 10px;
-            border-bottom: solid #d3d3d388 40px;
+            border: solid #dbdbdb 12px;
+            border-top: solid #dbdbdb 50px;
             border-radius: 30px;
             -moz-border-radius: 6px;
+        }
+
+        #one .flex-item-right table th {
+            font-family: 'Julius Sans One', sans-serif;
+            font-size: 25px;
+            position: absolute;
+            top: -40px;
+            left: 20px;
         }
 
         #one .flex-item-right table .info-details {
@@ -92,7 +100,8 @@
 
         #one .flex-item-right table .info {
             font-family: 'Julius Sans One', sans-serif;
-            color: rgb(0, 0, 0);
+            font-weight: bolder;
+            color: orangered;
             position: relative;
             top: 15px;
         }
@@ -155,7 +164,6 @@
             width: 50%;
         }
 
-
         #two .flex-item-center table #icons {
             width: 50px;
             margin-right: 20px;
@@ -211,6 +219,10 @@
 
                 <div class="flex-item-left">
 
+                    <header>
+                        <p class="display-5">Asus ROG Phone 5 Ultimate</p>
+                    </header>
+
                     <div class="img-gallary">
                         <div class="img-gallary-list">
                             <img src="https://images-na.ssl-images-amazon.com/images/I/61T0DkKlXNL._SL1500_.jpg"
@@ -236,44 +248,51 @@
                 <div class="flex-item-right">
 
                     <table>
-                        <tr>
-                            <td rowspan="2"><img id="icons" src="../img/icons/display.svg" alt=""></td>
-                            <td class="info">Display</td>
-                            <td rowspan="2"><img id="icons" src="../img/icons/cpu.svg" alt=""></td>
-                            <td class="info">Processor</td>
-                            <td rowspan="2"><img id="icons" src="../img/icons/operating system.svg" alt=""></td>
-                            <td class="info">OS</td>
-                        </tr>
-                        <tr>
-                            <td class="info-details">6.78-inch</td>
-                            <td class="info-details">Qualcomm Snapdragon 888</td>
-                            <td class="info-details">Andriod 11</td>
-                        </tr>
-
-                        <tr>
-                            <td rowspan="2"><img id="icons" src="../img/icons/camera.svg" alt=""></td>
-                            <td class="info">Camera</td>
-                            <td rowspan="2"><img id="icons" src="../img/icons/selfie.svg" alt=""></td>
-                            <td class="info">Front Camera</td>
-                            <td rowspan="2"><img id="icons" src="../img/icons/batteries.svg" alt=""></td>
-                            <td class="info">Battery Capacity</td>
-                        </tr>
-                        <tr>
-                            <td class="info-details">24MP</td>
-                            <td class="info-details">64MP + 13MP + 5MP</td>
-                            <td class="info-details">6000mAh</td>
-                        </tr>
-
-                        <tr>
-                            <td rowspan="2"><img id="icons" src="../img/icons/ram.svg" alt=""></td>
-                            <td class="info">RAM</td>
-                            <td rowspan="2"><img id="icons" src="../img/icons/micro-sd-card.svg" alt=""></td>
-                            <td class="info">Storage</td>
-                        </tr>
-                        <tr>
-                            <td class="info-details">18GB</td>
-                            <td class="info-details">512GB</td>
-                        </tr>
+                        <thead>
+                            <tr>
+                                <th colspan="6">Key Specs</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td rowspan="2"><img id="icons" src="../img/icons/display.svg" alt=""></td>
+                                <td class="info">Display</td>
+                                <td rowspan="2"><img id="icons" src="../img/icons/cpu.svg" alt=""></td>
+                                <td class="info">Processor</td>
+                                <td rowspan="2"><img id="icons" src="../img/icons/operating system.svg" alt=""></td>
+                                <td class="info">OS</td>
+                            </tr>
+                            <tr>
+                                <td class="info-details">6.78-inch</td>
+                                <td class="info-details">Qualcomm Snapdragon 888</td>
+                                <td class="info-details">Andriod 11</td>
+                            </tr>
+                            
+                            <tr>
+                                <td rowspan="2"><img id="icons" src="../img/icons/camera.svg" alt=""></td>
+                                <td class="info">Camera</td>
+                                <td rowspan="2"><img id="icons" src="../img/icons/selfie.svg" alt=""></td>
+                                <td class="info">Front Camera</td>
+                                <td rowspan="2"><img id="icons" src="../img/icons/batteries.svg" alt=""></td>
+                                <td class="info">Battery Capacity</td>
+                            </tr>
+                            <tr>
+                                <td class="info-details">24MP</td>
+                                <td class="info-details">64MP + 13MP + 5MP</td>
+                                <td class="info-details">6000mAh</td>
+                            </tr>
+                            
+                            <tr>
+                                <td rowspan="2"><img id="icons" src="../img/icons/ram.svg" alt=""></td>
+                                <td class="info">RAM</td>
+                                <td rowspan="2"><img id="icons" src="../img/icons/micro-sd-card.svg" alt=""></td>
+                                <td class="info">Storage</td>
+                            </tr>
+                            <tr>
+                                <td class="info-details">18GB</td>
+                                <td class="info-details">512GB</td>
+                            </tr>
+                        </tbody>
                     </table>
 
                 </div>
@@ -519,10 +538,6 @@
                                 <td class="feature">NFC</td>
                                 <td>Yes</td>
                             </tr>
-                            <tr>
-                                <td class="feature">Charging Port</td>
-                                <td>USB Type-C 3.1 (side), USB Type-C 2.0 (bottom)</td>
-                            </tr>
                         </tbody>
                     </table>
 
@@ -550,8 +565,12 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <td></td>
-                                <td>1300 USD  or  120099 INR</td>
+                                <td class="feature">USD (&#36;)</td>
+                                <td>&#36; 1,300</td>
+                            </tr>
+                            <tr>
+                                <td class="feature">INR (&#8377;)</td>
+                                <td>&#8377; 79,999</td>
                             </tr>
                         </tbody>
                     </table>
