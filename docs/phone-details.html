@@ -48,12 +48,12 @@
 
         #one .flex-item-left {
             flex: 20%;
-            background-color: crimson;
+            /* background-color: crimson; */
         }
         
         #one .flex-item-right {
             flex: 30%;
-            background-color: cornflowerblue;
+            /* background-color: cornflowerblue; */
         }
 
         #two .flex-item-left {
@@ -263,13 +263,72 @@
                 top: -90px;
             }
 
-            #one .flex-item-right #col-three, #one .flex-item-right #col-six {
+            #one .flex-item-right #col-three,
+            #one .flex-item-right #col-six {
                 margin-bottom: -30px;
             }
 
             #one .flex-item-right #col-seven,
             #one .flex-item-right #col-eight {
                 margin-bottom: -90px;
+            }
+        }
+
+        @media (min-width: 480px) and (max-width: 540px) {
+            #one .flex-item-right .div-table-col {
+                margin-left: -10px;
+            }
+
+            #one .flex-item-right #col-six {
+                margin-left: -45px;
+            }
+        }
+
+        @media (min-width: 400px) and (max-width: 480px) {
+            #one .flex-item-right .div-table-col {
+                margin-left: -20px;
+                border: 1px solid black;
+                margin-top: 10px;
+            }
+
+            #one .flex-item-right #col-six {
+                margin-left: -70px;
+            }
+
+            #one .flex-item-right .div-table-col {
+                width: 175px;
+            }
+
+            #one .flex-item-right #icons {
+                margin-left: 5px;
+            }
+
+            #one .flex-item-right .div-table-col-info,
+            #one .flex-item-right .div-table-col-info-details {
+                margin-left: -20px;
+                width: 100px;
+            }
+
+            #one .flex-item-right .div-table-col-info-details {
+                
+            }
+
+            #one .flex-item-right #col-three {
+                position: relative;
+                top: 125px;
+            }
+
+            #one .flex-item-right #col-five .div-table-col-info-details,
+            #one .flex-item-right #col-six .div-table-col-info-details {
+                position: relative;
+                top: -30px;
+            }
+
+            #one .flex-item-right #col-two,
+            #one .flex-item-right #col-five,
+            #one .flex-item-right #col-eight {
+                position: relative;
+                left: 20px;
             }
         }
 
