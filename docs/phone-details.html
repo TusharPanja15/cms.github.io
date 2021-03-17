@@ -57,13 +57,13 @@
         }
 
         #two .flex-item-center {
-            flex: 50%;
+            flex: 40%;
             /* background-color: greenyellow; */
         }
 
         #one .flex-item-right,
         #two .flex-item-right {
-            flex: 10%;
+            flex: 25%;
             /* background-color: cornflowerblue; */
         }
 
@@ -113,7 +113,7 @@
             width: 200px;
         }
 
-        #one .flex-item-right table #icons {
+        #one .flex-item-right #icons {
             width: 50px;
             margin: 20px;
         }
@@ -154,13 +154,13 @@
             border-radius: 30px;
             -moz-border-radius: 6px;
         }
-        
+
         #two .flex-item-center table th {
             font-family: 'Ubuntu-Bold', sans-serif;
             font-size: 25px;
             color: rgb(80, 80, 80);
             background-color: #f2f2f2;
-            
+
             width: 50%;
         }
 
@@ -190,7 +190,7 @@
             -webkit-border-radius: 0 16px 16px 0;
         }
 
-         @media (max-width: 1055px) {
+        @media (max-width: 1185px) {
 
             #two .flex-item-left,
             #two .flex-item-right {
@@ -200,6 +200,93 @@
             #one .flex-item-right {
                 margin-bottom: 200px;
             }
+
+            #one .flex-item-left,
+            #one .flex-item-right {
+                flex: 100%;
+            }
+
+            #one .flex-item-left {
+                order: 1;
+            }
+
+            #one .flex-item-right {
+                order: 2;
+            }
+        }
+
+        @media (max-width: 768px) {
+            #one .flex-item-right table {
+                width: 20%;
+            }
+
+            #one .flex-item-right table .info-details {
+                position: relative;
+                top: 4px;
+            }
+        }
+
+
+
+        .div-table {
+            display: table;
+            width: auto;
+            border: solid #dbdbdb 12px;
+            border-top: solid #dbdbdb 50px;
+            border-radius: 20px;
+            border-spacing: 20px;
+            /* cellspacing:poor IE support for  this */
+        }
+
+        .div-table-row {
+            display: table-row;
+            width: auto;
+            clear: both;
+            margin-bottom: -50px !important;
+        }
+
+        .div-table-col {
+            float: left;
+            /* fix for  buggy browsers */
+            display: table-column;
+            width: 200px;
+            margin: -30px 20px 10px -20px;
+        }
+
+        .div-table-col-info {
+            font-family: 'Julius Sans One', sans-serif;
+            font-weight: bolder;
+            color: orangered;
+            width: 145px;
+            position: relative;
+            top: -70px;
+            left: 80px;
+            
+        }
+
+        .div-table-col-info-details {
+            font-family: 'Ubuntu', sans-serif;
+            width: 145px;
+            position: relative;
+            top: -50px;
+            left: 80px;
+            
+        }
+
+        .div-table-col-info,
+        .div-table-col-info-details {
+            height: 15px;
+            margin-bottom: -10px;
+
+        }
+
+        .div-table-header {
+            font-family: 'Julius Sans One', sans-serif;
+            font-weight: bolder;
+            font-size: 25px;
+            margin-left: -20px;
+            position: absolute;
+            top: -10px;
         }
     </style>
 
@@ -222,6 +309,9 @@
                     <header>
                         <p class="display-5">Asus ROG Phone 5 Ultimate</p>
                     </header>
+
+                    <button onclick="myFunction()">Try it</button>
+                    <div id="demo"></div>
 
                     <div class="img-gallary">
                         <div class="img-gallary-list">
@@ -247,6 +337,53 @@
 
                 <div class="flex-item-right">
 
+
+                    <div class="div-table">
+                        <div class="div-table-header">
+                            <div class="div-table-row">Key Specs</div>
+                        </div>
+                        <div class="div-table-row">
+                            <div class="div-table-col"><img id="icons" src="../img/icons/display.svg" alt="">
+                                <div class="div-table-col-info">Display</div>
+                                <div class="div-table-col-info-details">6.78-inch</div>
+                            </div>
+                            <div class="div-table-col"><img id="icons" src="../img/icons/cpu.svg" alt="">
+                                <div class="div-table-col-info">Processor</div>
+                                <div class="div-table-col-info-details">Qualcomm Snapdragon 888</div>
+                            </div>
+                            <div class="div-table-col"><img id="icons" src="../img/icons/operating system.svg" alt="">
+                                <div class="div-table-col-info">OS</div>
+                                <div class="div-table-col-info-details">Andriod 11</div>
+                            </div>
+                        </div>
+                        <div class="div-table-row">
+                            <div class="div-table-col"><img id="icons" src="../img/icons/camera.svg" alt="">
+                                <div class="div-table-col-info">Camera</div>
+                                <div class="div-table-col-info-details">64MP + 13MP + 5MP</div>
+                            </div>
+                            <div class="div-table-col"><img id="icons" src="../img/icons/selfie.svg" alt="">
+                                <div class="div-table-col-info">Front Camera</div>
+                                <div class="div-table-col-info-details">24MP</div>
+                            </div>
+                            <div class="div-table-col"><img id="icons" src="../img/icons/batteries.svg" alt="">
+                                <div class="div-table-col-info">Battery Capacity</div>
+                                <div class="div-table-col-info-details">6000mAh</div>
+                            </div>
+                        </div>
+                        <div class="div-table-row">
+                            <div class="div-table-col"><img id="icons" src="../img/icons/ram.svg" alt="">
+                                <div class="div-table-col-info">RAM</div>
+                                <div class="div-table-col-info-details">18GB</div>
+                            </div>
+                            <div class="div-table-col"><img id="icons" src="../img/icons/micro-sd-card.svg" alt="">
+                                <div class="div-table-col-info">Storage</div>
+                                <div class="div-table-col-info-details">512GB</div>
+                            </div>
+                        </div>
+                    
+                    </div>
+
+
                     <table>
                         <thead>
                             <tr>
@@ -267,7 +404,7 @@
                                 <td class="info-details">Qualcomm Snapdragon 888</td>
                                 <td class="info-details">Andriod 11</td>
                             </tr>
-                            
+                    
                             <tr>
                                 <td rowspan="2"><img id="icons" src="../img/icons/camera.svg" alt=""></td>
                                 <td class="info">Camera</td>
@@ -277,11 +414,11 @@
                                 <td class="info">Battery Capacity</td>
                             </tr>
                             <tr>
-                                <td class="info-details">24MP</td>
                                 <td class="info-details">64MP + 13MP + 5MP</td>
+                                <td class="info-details">24MP</td>
                                 <td class="info-details">6000mAh</td>
                             </tr>
-                            
+                    
                             <tr>
                                 <td rowspan="2"><img id="icons" src="../img/icons/ram.svg" alt=""></td>
                                 <td class="info">RAM</td>
