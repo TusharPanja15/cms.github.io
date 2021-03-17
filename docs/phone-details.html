@@ -29,6 +29,11 @@
             src: url(..//fonts/Ubuntu/Ubuntu-Bold.ttf) format('woff');
         }
 
+        * {
+            box-sizing: border-box;
+            padding: 0px;
+        }
+
         #one .flex-container,
         #two .flex-container {
             display: flex;
@@ -139,13 +144,13 @@
         }
 
         #one .flex-item-left .img-container img {
-            width: 80%;
+            width:90%;
             height: 700px;
             margin-bottom: -100px;
             object-fit: cover;
             position: relative;
             top: -400px;
-            left: 110px;
+            left: 30px;
         }
 
         #two .flex-item-center table {
@@ -284,19 +289,18 @@
             }
         }
 
-        @media (min-width: 400px) and (max-width: 480px) {
+        @media (min-width: 427px) and (max-width: 480px) {
+            
+
             #one .flex-item-right .div-table-col {
                 margin-left: -20px;
                 border: 1px solid black;
                 margin-top: 10px;
+                width: 190px;
             }
 
             #one .flex-item-right #col-six {
-                margin-left: -70px;
-            }
-
-            #one .flex-item-right .div-table-col {
-                width: 175px;
+                margin-left: -55px;
             }
 
             #one .flex-item-right #icons {
@@ -307,10 +311,6 @@
             #one .flex-item-right .div-table-col-info-details {
                 margin-left: -20px;
                 width: 100px;
-            }
-
-            #one .flex-item-right .div-table-col-info-details {
-                
             }
 
             #one .flex-item-right #col-three {
@@ -329,6 +329,86 @@
             #one .flex-item-right #col-eight {
                 position: relative;
                 left: 20px;
+            }
+        }
+
+        @media (min-width: 340px) and (max-width: 429px) {
+            #one .flex-item-right .div-table {
+                width: 97%;
+            }
+
+            #one .flex-item-right .div-table-col {
+                border: 1px solid black;
+                margin: 10px 0px 0px -20px;
+                width: 150px;
+            }
+
+            #one .flex-item-right #icons {
+                margin-left: 5px;
+            }
+
+            #one .flex-item-right #col-two,
+            #one .flex-item-right #col-five,
+            #one .flex-item-right #col-eight {
+                position: relative;
+                left: 25px;
+            }
+
+            #one .flex-item-right #col-three {
+                position: relative;
+                top: 125px;
+            }
+
+            #one .flex-item-right #col-six {
+                position: relative;
+                left: 175px;
+            }
+
+            #one .flex-item-right .div-table-col-info,
+            #one .flex-item-right .div-table-col-info-details {
+                margin-left: -15px;
+                width: 80px;
+            }
+
+            #one .flex-item-right #col-five .div-table-col-info-details,
+            #one .flex-item-right #col-six .div-table-col-info-details {
+                position: relative;
+                top: -30px;
+            }
+            
+        }
+
+        @media (min-width: 310px) and (max-width: 340px) {
+            #one .flex-item-right .div-table {
+                width: auto;
+            }
+
+            #one .flex-item-right .div-table-col {
+                border: 1px solid black;
+                margin: 10px 0px 0px -20px;
+                width: 170px;
+            }
+
+            #one .flex-item-right #col-three {
+                position: relative;
+                top: 235px;
+            }
+
+            #one .flex-item-right #col-six {
+                position: relative;
+                top: 20px;
+                left: 0px;
+            }
+
+            #one .flex-item-right #col-seven {
+                position: relative;
+                top: 30px;
+            }
+
+            #one .flex-item-right #col-eight {
+                margin-bottom: 200px;
+                position: relative;
+                top: 120px;
             }
         }
 
