@@ -48,7 +48,12 @@
 
         #one .flex-item-left {
             flex: 20%;
-            /* background-color: crimson; */
+            background-color: crimson;
+        }
+        
+        #one .flex-item-right {
+            flex: 30%;
+            background-color: cornflowerblue;
         }
 
         #two .flex-item-left {
@@ -57,13 +62,12 @@
         }
 
         #two .flex-item-center {
-            flex: 40%;
+            flex: 50%;
             /* background-color: greenyellow; */
         }
 
-        #one .flex-item-right,
         #two .flex-item-right {
-            flex: 25%;
+            flex: 10%;
             /* background-color: cornflowerblue; */
         }
 
@@ -190,7 +194,7 @@
             -webkit-border-radius: 0 16px 16px 0;
         }
 
-        @media (max-width: 1185px) {
+        @media (max-width: 1199px) {
 
             #two .flex-item-left,
             #two .flex-item-right {
@@ -198,7 +202,7 @@
             }
 
             #one .flex-item-right {
-                margin-bottom: 200px;
+                margin-bottom: 500px;
             }
 
             #one .flex-item-left,
@@ -213,7 +217,66 @@
             #one .flex-item-right {
                 order: 2;
             }
+
+            #one .flex-item-right .div-table {
+                width: 75%;
+                margin: 0 auto;
+            }
+
+            #one .flex-item-right .div-table-col {
+                margin: 0 auto;
+            }
         }
+
+        @media (max-width: 992px) {
+            #one .flex-item-right .div-table {
+                width: 100%;
+                margin: auto -24px;
+            }
+        }
+
+        @media (max-width: 767px) {
+            #one .flex-item-right .div-table {
+                width: 100%;
+            }
+
+            #one .flex-item-right .div-table-col {
+                width: 50%;
+            }
+
+            #one .flex-item-right #col-three {
+                position: relative;
+                top: 100px;
+            }
+
+            #one .flex-item-right #col-six {
+                position: relative;
+                left: 225px;
+            }
+
+            #one .flex-item-right #col-four,
+            #one .flex-item-right #col-five,
+            #one .flex-item-right #col-six,
+            #one .flex-item-right #col-seven,
+            #one .flex-item-right #col-eight  {
+                position: relative;
+                top: -90px;
+            }
+
+            #one .flex-item-right #col-three, #one .flex-item-right #col-six {
+                margin-bottom: -30px;
+            }
+
+            #one .flex-item-right #col-seven,
+            #one .flex-item-right #col-eight {
+                margin-bottom: -90px;
+            }
+        }
+
+
+
+
+
 
         @media (max-width: 768px) {
             #one .flex-item-right table {
@@ -235,14 +298,24 @@
             border-top: solid #dbdbdb 50px;
             border-radius: 20px;
             border-spacing: 20px;
-            /* cellspacing:poor IE support for  this */
+            position: relative;
+            top: 300px;
+            left: 25px;
+        }
+
+        .div-table-header {
+            font-family: 'Julius Sans One', sans-serif;
+            font-weight: bolder;
+            font-size: 25px;
+            margin-left: -20px;
+            position: absolute;
+            top: -60px;
         }
 
         .div-table-row {
             display: table-row;
             width: auto;
             clear: both;
-            margin-bottom: -50px !important;
         }
 
         .div-table-col {
@@ -278,15 +351,6 @@
             height: 15px;
             margin-bottom: -10px;
 
-        }
-
-        .div-table-header {
-            font-family: 'Julius Sans One', sans-serif;
-            font-weight: bolder;
-            font-size: 25px;
-            margin-left: -20px;
-            position: absolute;
-            top: -10px;
         }
     </style>
 
@@ -343,39 +407,39 @@
                             <div class="div-table-row">Key Specs</div>
                         </div>
                         <div class="div-table-row">
-                            <div class="div-table-col"><img id="icons" src="../img/icons/display.svg" alt="">
+                            <div class="div-table-col" id="col-one"><img id="icons" src="../img/icons/display.svg" alt="">
                                 <div class="div-table-col-info">Display</div>
                                 <div class="div-table-col-info-details">6.78-inch</div>
                             </div>
-                            <div class="div-table-col"><img id="icons" src="../img/icons/cpu.svg" alt="">
+                            <div class="div-table-col" id="col-two"><img id="icons" src="../img/icons/cpu.svg" alt="">
                                 <div class="div-table-col-info">Processor</div>
                                 <div class="div-table-col-info-details">Qualcomm Snapdragon 888</div>
                             </div>
-                            <div class="div-table-col"><img id="icons" src="../img/icons/operating system.svg" alt="">
+                            <div class="div-table-col" id="col-three"><img id="icons" src="../img/icons/operating system.svg" alt="">
                                 <div class="div-table-col-info">OS</div>
                                 <div class="div-table-col-info-details">Andriod 11</div>
                             </div>
                         </div>
                         <div class="div-table-row">
-                            <div class="div-table-col"><img id="icons" src="../img/icons/camera.svg" alt="">
+                            <div class="div-table-col" id="col-four"><img id="icons" src="../img/icons/camera.svg" alt="">
                                 <div class="div-table-col-info">Camera</div>
                                 <div class="div-table-col-info-details">64MP + 13MP + 5MP</div>
                             </div>
-                            <div class="div-table-col"><img id="icons" src="../img/icons/selfie.svg" alt="">
+                            <div class="div-table-col" id="col-five"><img id="icons" src="../img/icons/selfie.svg" alt="">
                                 <div class="div-table-col-info">Front Camera</div>
                                 <div class="div-table-col-info-details">24MP</div>
                             </div>
-                            <div class="div-table-col"><img id="icons" src="../img/icons/batteries.svg" alt="">
+                            <div class="div-table-col" id="col-six"><img id="icons" src="../img/icons/batteries.svg" alt="">
                                 <div class="div-table-col-info">Battery Capacity</div>
                                 <div class="div-table-col-info-details">6000mAh</div>
                             </div>
                         </div>
                         <div class="div-table-row">
-                            <div class="div-table-col"><img id="icons" src="../img/icons/ram.svg" alt="">
+                            <div class="div-table-col" id="col-seven"><img id="icons" src="../img/icons/ram.svg" alt="">
                                 <div class="div-table-col-info">RAM</div>
                                 <div class="div-table-col-info-details">18GB</div>
                             </div>
-                            <div class="div-table-col"><img id="icons" src="../img/icons/micro-sd-card.svg" alt="">
+                            <div class="div-table-col" id="col-eight"><img id="icons" src="../img/icons/micro-sd-card.svg" alt="">
                                 <div class="div-table-col-info">Storage</div>
                                 <div class="div-table-col-info-details">512GB</div>
                             </div>
@@ -384,7 +448,7 @@
                     </div>
 
 
-                    <table>
+                    <!-- <table>
                         <thead>
                             <tr>
                                 <th colspan="6">Key Specs</th>
@@ -430,7 +494,7 @@
                                 <td class="info-details">512GB</td>
                             </tr>
                         </tbody>
-                    </table>
+                    </table> -->
 
                 </div>
 
