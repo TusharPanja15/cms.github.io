@@ -708,6 +708,10 @@
         }
 
         @media (max-width: 598px) {
+            #one .flex-item-left #image-gallary {
+                height: 50%;
+            }
+
             #one .flex-item-right .div-table {
                 display: none;
             }
@@ -716,7 +720,32 @@
                 display: block !important;
                 position: relative;
                 top: 550px;
-                width: 100%;
+                left: -45px;
+                width: 110%;
+                height: 40%;
+            }
+
+            #one .flex-item-right #specs .key-specs-carousel {
+                position: relative;
+                left: 0px;
+            }
+
+            #one .flex-item-right #specs .key-specs-carousel .col {
+                margin-bottom: 20px;
+            }
+
+            #one .flex-item-right #specs .key-specs-carousel .div-table-col-info,
+            #one .flex-item-right #specs .key-specs-carousel .div-table-col-info-details {
+                width: 45%;
+            }
+
+            #one .flex-item-right #specs .key-specs-carousel #col-five .div-table-col-info,
+            #one .flex-item-right #specs .key-specs-carousel #col-six .div-table-col-info{
+                margin-bottom: 20px;
+            }
+            
+            #one .flex-item-right #specs .key-specs-carousel #col-six {
+                margin-top: -45px;
             }
         }
 
@@ -803,14 +832,6 @@
                                 <img src="https://images-na.ssl-images-amazon.com/images/I/71Lx9l3NivL._SL1500_.jpg" class="d-block w-100" alt="...">
                             </div>
                         </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#image-gallary" data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#image-gallary" data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
-                        </button>
                     </div>
 
 
@@ -903,39 +924,39 @@
                                     <div class="">Key Specs</div>
                                 </div>
                                 <div class="carousel-item  active" data-bs-interval="10000">
-                                    <div id="col-one"><img id="icons" src="../img/icons/display.svg" alt="">
+                                    <div class="col" id="col-one"><img id="icons" src="../img/icons/display.svg" alt="">
                                         <div class="div-table-col-info">Display</div>
                                         <div class="div-table-col-info-details">6.78-inch</div>
                                     </div>
-                                    <div id="col-two"><img id="icons" src="../img/icons/cpu.svg" alt="">
+                                    <div class="col" id="col-two"><img id="icons" src="../img/icons/cpu.svg" alt="">
                                         <div class="div-table-col-info">Processor</div>
                                         <div class="div-table-col-info-details">Qualcomm Snapdragon 888</div>
                                     </div>
-                                    <div id="col-three"><img id="icons" src="../img/icons/operating system.svg" alt="">
+                                    <div class="col" id="col-three"><img id="icons" src="../img/icons/operating system.svg" alt="">
                                         <div class="div-table-col-info">OS</div>
                                         <div class="div-table-col-info-details">Andriod 11</div>
                                     </div>
                                 </div>
                                 <div class="carousel-item " data-bs-interval="2000">
-                                    <div id="col-four"><img id="icons" src="../img/icons/camera.svg" alt="">
+                                    <div class="col" id="col-four"><img id="icons" src="../img/icons/camera.svg" alt="">
                                         <div class="div-table-col-info">Camera</div>
                                         <div class="div-table-col-info-details">64MP + 13MP + 5MP</div>
                                     </div>
-                                    <div id="col-five"><img id="icons" src="../img/icons/selfie.svg" alt="">
+                                    <div class="col" id="col-five"><img id="icons" src="../img/icons/selfie.svg" alt="">
                                         <div class="div-table-col-info">Front Camera</div>
                                         <div class="div-table-col-info-details">24MP</div>
                                     </div>
-                                    <div id="col-six"><img id="icons" src="../img/icons/batteries.svg" alt="">
+                                    <div class="col" id="col-six"><img id="icons" src="../img/icons/batteries.svg" alt="">
                                         <div class="div-table-col-info">Battery Capacity</div>
                                         <div class="div-table-col-info-details">6000mAh</div>
                                     </div>
                                 </div>
                                 <div class="carousel-item ">
-                                    <div id="col-seven"><img id="icons" src="../img/icons/ram.svg" alt="">
+                                    <div class="col" id="col-seven"><img id="icons" src="../img/icons/ram.svg" alt="">
                                         <div class="div-table-col-info">RAM</div>
                                         <div class="div-table-col-info-details">18GB</div>
                                     </div>
-                                    <div id="col-eight"><img id="icons" src="../img/icons/micro-sd-card.svg" alt="">
+                                    <div class="col" id="col-eight"><img id="icons" src="../img/icons/micro-sd-card.svg" alt="">
                                         <div class="div-table-col-info">Storage</div>
                                         <div class="div-table-col-info-details">512GB</div>
                                     </div>
@@ -944,14 +965,6 @@
                             </div>
 
                         </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#specs" data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#specs" data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
-                        </button>
                     </div>
 
 
