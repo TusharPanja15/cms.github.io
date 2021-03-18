@@ -55,7 +55,7 @@
             flex: 20%;
             /* background-color: crimson; */
         }
-        
+
         #one .flex-item-right {
             flex: 30%;
             /* background-color: cornflowerblue; */
@@ -135,22 +135,27 @@
             cursor: pointer;
             display: block;
             border: 1px solid #0000009f;
+            border-radius: 5px;
             opacity: 0.6;
         }
 
         #one .flex-item-left .img-gallary-list img:hover {
             opacity: 1;
             border: 1px solid orangered;
+            border-radius: 5px;
+            transform: scale(1.05);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.726), 0 4px 8px rgba(0, 0, 0, 0.603);
         }
 
         #one .flex-item-left .img-container img {
-            width:90%;
+            width: 80%;
+            border: 1px solid teal;
             height: 700px;
             margin-bottom: -100px;
-            object-fit: cover;
+            object-fit: contain;
             position: relative;
             top: -400px;
-            left: 30px;
+            left: 80px;
         }
 
         #two .flex-item-center table {
@@ -241,6 +246,24 @@
         }
 
         @media (max-width: 767px) {
+
+            #one .flex-item-left .img-gallary-list img {
+                float: left;
+                margin: 20px;
+                position: relative;
+                top: 750px;
+                left: 30px;
+            }
+
+            #one .flex-item-left .img-container img  {
+                margin: 0 auto;
+                position: relative;
+                top: -100px;
+                left: 55px;
+            }
+            
+
+
             #one .flex-item-right .div-table {
                 width: 100%;
             }
@@ -263,7 +286,7 @@
             #one .flex-item-right #col-five,
             #one .flex-item-right #col-six,
             #one .flex-item-right #col-seven,
-            #one .flex-item-right #col-eight  {
+            #one .flex-item-right #col-eight {
                 position: relative;
                 top: -90px;
             }
@@ -279,6 +302,40 @@
             }
         }
 
+        @media (max-width: 517px) {
+            #one .flex-item-left .img-gallary-list img {
+                float: left;
+                margin: 20px;
+                position: relative;
+                top: 750px;
+                left: 20px;
+            }
+
+            #one .flex-item-left .img-container img  {
+                margin: 0 auto;
+                position: relative;
+                top: -100px;
+                left: 45px;
+            }
+        }
+
+        @media (max-width: 423px) {
+            #one .flex-item-left .img-gallary-list img {
+                float: left;
+                margin: 10px;
+                position: relative;
+                top: 750px;
+                left: 34px;
+            }
+
+            #one .flex-item-left .img-container img  {
+                margin: 0 auto;
+                position: relative;
+                top: -100px;
+                left: 35px;
+            }
+        }
+
         @media (min-width: 480px) and (max-width: 540px) {
             #one .flex-item-right .div-table-col {
                 margin-left: -10px;
@@ -290,7 +347,7 @@
         }
 
         @media (min-width: 427px) and (max-width: 480px) {
-            
+
 
             #one .flex-item-right .div-table-col {
                 margin-left: -20px;
@@ -373,7 +430,7 @@
                 position: relative;
                 top: -30px;
             }
-            
+
         }
 
         @media (max-width: 401px) {
@@ -381,6 +438,7 @@
                 margin: 10px 0px 0px -20px;
                 width: 140px;
             }
+
             #one .flex-item-right #col-six {
                 position: relative;
                 left: 155px;
@@ -422,7 +480,7 @@
 
         @media (max-width: 310px) {
             #one .flex-item-right .div-table {
-                width:  100%;
+                width: 100%;
             }
 
             #one .flex-item-right #col-six {
@@ -485,14 +543,13 @@
         }
 
         .div-table-col-info {
-            font-family: 'Julius Sans One', sans-serif;
-            font-weight: bolder;
+            font-family: 'Ubuntu-Bold', sans-serif;
             color: orangered;
             width: 145px;
             position: relative;
             top: -70px;
             left: 80px;
-            
+
         }
 
         .div-table-col-info-details {
@@ -501,7 +558,7 @@
             position: relative;
             top: -50px;
             left: 80px;
-            
+
         }
 
         .div-table-col-info,
@@ -555,6 +612,8 @@
                         </div>
                     </div>
 
+
+
                 </div>
 
                 <div class="flex-item-right">
@@ -565,7 +624,8 @@
                             <div class="div-table-row">Key Specs</div>
                         </div>
                         <div class="div-table-row">
-                            <div class="div-table-col" id="col-one"><img id="icons" src="../img/icons/display.svg" alt="">
+                            <div class="div-table-col" id="col-one"><img id="icons" src="../img/icons/display.svg"
+                                    alt="">
                                 <div class="div-table-col-info">Display</div>
                                 <div class="div-table-col-info-details">6.78-inch</div>
                             </div>
@@ -573,21 +633,25 @@
                                 <div class="div-table-col-info">Processor</div>
                                 <div class="div-table-col-info-details">Qualcomm Snapdragon 888</div>
                             </div>
-                            <div class="div-table-col" id="col-three"><img id="icons" src="../img/icons/operating system.svg" alt="">
+                            <div class="div-table-col" id="col-three"><img id="icons"
+                                    src="../img/icons/operating system.svg" alt="">
                                 <div class="div-table-col-info">OS</div>
                                 <div class="div-table-col-info-details">Andriod 11</div>
                             </div>
                         </div>
                         <div class="div-table-row">
-                            <div class="div-table-col" id="col-four"><img id="icons" src="../img/icons/camera.svg" alt="">
+                            <div class="div-table-col" id="col-four"><img id="icons" src="../img/icons/camera.svg"
+                                    alt="">
                                 <div class="div-table-col-info">Camera</div>
                                 <div class="div-table-col-info-details">64MP + 13MP + 5MP</div>
                             </div>
-                            <div class="div-table-col" id="col-five"><img id="icons" src="../img/icons/selfie.svg" alt="">
+                            <div class="div-table-col" id="col-five"><img id="icons" src="../img/icons/selfie.svg"
+                                    alt="">
                                 <div class="div-table-col-info">Front Camera</div>
                                 <div class="div-table-col-info-details">24MP</div>
                             </div>
-                            <div class="div-table-col" id="col-six"><img id="icons" src="../img/icons/batteries.svg" alt="">
+                            <div class="div-table-col" id="col-six"><img id="icons" src="../img/icons/batteries.svg"
+                                    alt="">
                                 <div class="div-table-col-info">Battery Capacity</div>
                                 <div class="div-table-col-info-details">6000mAh</div>
                             </div>
@@ -597,12 +661,13 @@
                                 <div class="div-table-col-info">RAM</div>
                                 <div class="div-table-col-info-details">18GB</div>
                             </div>
-                            <div class="div-table-col" id="col-eight"><img id="icons" src="../img/icons/micro-sd-card.svg" alt="">
+                            <div class="div-table-col" id="col-eight"><img id="icons"
+                                    src="../img/icons/micro-sd-card.svg" alt="">
                                 <div class="div-table-col-info">Storage</div>
                                 <div class="div-table-col-info-details">512GB</div>
                             </div>
                         </div>
-                    
+
                     </div>
 
 
@@ -983,6 +1048,7 @@
         function changeImg(smallImg) {
             var fullImg = document.getElementById("imageBox");
             fullImg.src = smallImg.src;
+            
         }
 
 
