@@ -131,42 +131,149 @@
             width: 200px;
         } */
 
+
+
+        /* section id=one */
+
+        /* Container text */
+
+        #one .flex-container .header-top p {
+            font-family: 'Julius Sans One', sans-serif;
+            font-weight: bolder;
+            font-size: 30px;
+        }
+
+        #one .flex-container .header-top {
+            position: absolute;
+            top: 10px;
+            margin-bottom: 200px;
+        }
+
+        #one .flex-container .bottom {
+            position: absolute;
+            top: 800px;
+            left: 170px;
+        }
+
+
+
+        /* Image Gallary */
+
+        #one .flex-item-left #image-gallary {
+            position: relative;
+            top: 150px;
+            width: 80%;
+        }
+
+        #one .flex-item-left #image-gallary img {
+            height: 600px;
+            object-fit: contain;
+            margin-bottom: 50px;
+        }
+
+        #one .flex-item-right #specs button,
+        #one .flex-item-left #image-gallary button {
+            border-radius: 50%;
+            width: 10px;
+            height: 10px;
+        }
+
+
+        /* Icons */
+
         #one .flex-item-right #icons {
             width: 50px;
             margin: 20px;
         }
 
-        #one .flex-item-left .img-gallary-list img {
-            width: 10%;
-            height: 80px;
-            object-fit: contain;
-            margin: 10px 0;
-            cursor: pointer;
-            display: block;
-            border: 1px solid #0000009f;
-            border-radius: 5px;
-            opacity: 0.6;
-            position: relative;
-            top: 50px;
+
+        /* Mobile Devices Div Table Carosol only */
+
+        #one .flex-item-right #specs {
+            width: 40%;
+            height: 40%;
+            display: none;
         }
 
-        #one .flex-item-left .img-gallary-list img:hover {
-            opacity: 1;
-            border: 1px solid orangered;
-            border-radius: 5px;
-            transform: scale(1.05);
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.726), 0 4px 8px rgba(0, 0, 0, 0.603);
+        #one .flex-item-right #specs .header {
+            font-family: 'Julius Sans One', sans-serif;
+            font-weight: bolder;
+            font-size: 20px;
         }
 
-        #one .flex-item-left .img-container img {
-            width: 80%;
-            height: 500px;
-            margin-bottom: -100px;
-            object-fit: contain;
+
+        /* Div Table */
+
+        #one .flex-item-right .div-table {
+            display: table;
+            width: auto;
+            border: solid #dbdbdb 12px;
+            border-top: solid #dbdbdb 50px;
+            border-radius: 20px;
+            border-spacing: 20px;
             position: relative;
-            top: -400px;
+            top: 300px;
+            left: 25px;
+        }
+
+        #one .flex-item-right .div-table-header {
+            font-family: 'Julius Sans One', sans-serif;
+            font-weight: bolder;
+            font-size: 25px;
+            margin-left: -20px;
+            position: absolute;
+            top: -60px;
+        }
+
+        #one .flex-item-right .div-table-row {
+            display: table-row;
+            width: auto;
+            clear: both;
+        }
+
+        #one .flex-item-right .div-table-col {
+            float: left;
+            display: table-column;
+            width: 200px;
+            margin: -30px 20px 10px -20px;
+        }
+
+        #one .flex-item-right .div-table-col-info {
+            font-family: 'Ubuntu-Bold', sans-serif;
+            color: orangered;
+            width: 145px;
+            position: relative;
+            top: -70px;
             left: 80px;
+
         }
+
+        #one .flex-item-right .div-table-col-info-details {
+            font-family: 'Ubuntu', sans-serif;
+            width: 145px;
+            position: relative;
+            top: -50px;
+            left: 80px;
+
+        }
+
+        #one .flex-item-right .div-table-col-info,
+        #one .flex-item-right .div-table-col-info-details {
+            height: 15px;
+            margin-bottom: -10px;
+
+        }
+
+
+
+
+
+
+
+
+
+        /* section id=two */
+
 
         #two .flex-item-center table {
             width: 100%;
@@ -238,7 +345,7 @@
             }
         }
 
-        
+
 
         /* @media (max-width: 992px) {
             #one .flex-item-right .div-table {
@@ -507,65 +614,7 @@
 
 
 
-        .div-table {
-            display: table;
-            width: auto;
-            border: solid #dbdbdb 12px;
-            border-top: solid #dbdbdb 50px;
-            border-radius: 20px;
-            border-spacing: 20px;
-            position: relative;
-            top: 300px;
-            left: 25px;
-        }
-
-        .div-table-header {
-            font-family: 'Julius Sans One', sans-serif;
-            font-weight: bolder;
-            font-size: 25px;
-            margin-left: -20px;
-            position: absolute;
-            top: -60px;
-        }
-
-        .div-table-row {
-            display: table-row;
-            width: auto;
-            clear: both;
-        }
-
-        .div-table-col {
-            float: left;
-            display: table-column;
-            width: 200px;
-            margin: -30px 20px 10px -20px;
-        }
-
-        .div-table-col-info {
-            font-family: 'Ubuntu-Bold', sans-serif;
-            color: orangered;
-            width: 145px;
-            position: relative;
-            top: -70px;
-            left: 80px;
-
-        }
-
-        .div-table-col-info-details {
-            font-family: 'Ubuntu', sans-serif;
-            width: 145px;
-            position: relative;
-            top: -50px;
-            left: 80px;
-
-        }
-
-        .div-table-col-info,
-        .div-table-col-info-details {
-            height: 15px;
-            margin-bottom: -10px;
-
-        }
+        
 
         .card {
             border: orangered 1px solid;
@@ -583,11 +632,9 @@
             display: none;
         }
 
-        header {
-            font-family: 'OpenSans-Light', sans-serif;
-            font-size: 60px;
-            font-weight: bold;
-        }
+
+
+
 
 
 
@@ -609,8 +656,7 @@
             }
         }
 
-        @media (max-width: 767px) {
-        }
+        @media (max-width: 767px) {}
 
         @media (min-width: 992px) and (max-width: 1400px) {
             .div-table {
@@ -678,82 +724,76 @@
         }
 
 
-        #one .flex-item-left #image-gallary {
-            width: 80%;
-        }
-
-        #one .flex-item-left #image-gallary img {
-            height: 600px;
-            object-fit: contain;
-        }
-
-        #one .flex-item-right #specs  button{
-            border-radius: 50%;
-            width: 10px;
-            height: 10px;
-        }
-
-        #one .flex-item-right #specs .header {
-            font-family: 'Julius Sans One', sans-serif;
-            font-weight: bolder;
-            font-size: 20px;
-        }
 
 
-        #one .flex-container {
-            border: 13px solid #a3a3a3;
-            border-radius: 30px;
-            border-top: 150px solid #a3a3a3;
-            border-bottom: 80px solid #a3a3a3;
-            border-top-left-radius: 0px;
-            border-top-right-radius: 0px;
+
+
+
+        #two {
+            margin-top: 500px;
         }
 
-        #one .flex-item-right,
-        #one .flex-item-left {
-            margin-top: -180px;
-        }
-
-        #one .flex-container .header-top {
-            position: relative;
-            top: -150px;
-        }
-
-        #one .flex-container .header-top p {
-            font-family: 'Julius Sans One', sans-serif;
-            font-weight: bolder;
-            font-size: 30px;
-        }
-
-        #one .flex-container .bottom {
-            position: absolute;
-            top: 300px;
-            left: 10px;
-        }
         
 
-        #one .flex-item-right #specs {
-            width: 40%;
-            height: 40%;
-            display: none;
-        }
 
-        #one .flex-item-right #specs .key-specs-carousel {
-            position: relative;
-            left: 30px;
-        }
+
+
+
+
+        
+
+
+
+
+        
+        
+
+
 
         @media (max-width: 767px) {
             #one .flex-item-left #image-gallary {
                 position: relative;
-                top: -100px !important; /* ------------------ Must be changed to -100px ------------------------*/
+                top: -100px !important;
+                /* ------------------ Must be changed to -100px ------------------------*/
                 left: 0px;
             }
 
+            #one .flex-item-left #image-gallary button {
+                display: none;
+            }
 
-        }
 
-        @media (max-width: 598px) {
+            #one .flex-container {
+                border: 13px solid #a3a3a3;
+                border-radius: 30px;
+                border-top: 150px solid #a3a3a3;
+                border-bottom: 80px solid #a3a3a3;
+                border-top-left-radius: 0px;
+                border-top-right-radius: 0px;
+            }
+
+            #one .flex-item-right,
+            #one .flex-item-left {
+                margin-top: -380px;
+                margin-bottom: -130px;
+            }
+
+            #one .flex-container .header-top {
+                position: relative;
+                top: -150px;
+            }
+
+            #one .flex-container .bottom {
+                position: absolute;
+                top: 300px;
+                left: 15px;
+            }
+
+            #one .flex-item-right #specs .key-specs-carousel {
+                position: relative;
+                left: 30px;
+            }
+
             #one .flex-item-left #image-gallary {
                 position: relative;
                 top: 0px;
@@ -774,11 +814,17 @@
                 height: 40%;
             }
 
-            #one .flex-item-right #specs  button,
-            #one .flex-item-left #image-gallary button {
+            #one .flex-item-right #specs button {
                 position: relative;
-                top: 200px;
+                top: 180px;
+                left: -15px;
             }
+
+
+        }
+
+        @media (max-width: 598px) {
+            
 
             #one .flex-item-right #specs .key-specs-carousel {
                 position: relative;
@@ -795,25 +841,14 @@
             }
 
             #one .flex-item-right #specs .key-specs-carousel #col-five .div-table-col-info,
-            #one .flex-item-right #specs .key-specs-carousel #col-six .div-table-col-info{
+            #one .flex-item-right #specs .key-specs-carousel #col-six .div-table-col-info {
                 margin-bottom: 20px;
             }
-            
+
             #one .flex-item-right #specs .key-specs-carousel #col-six {
                 margin-top: -45px;
             }
         }
-
-
-
-
-
-
-
-
-
-
-
     </style>
 
     <title>Document</title>
@@ -835,7 +870,7 @@
             <div class="flex-container">
 
                 <div class="header-top">
-                <p>Asus ROG Phone 5 Ultimate</p>
+                    <p>Asus ROG Phone 5 Ultimate</p>
                     <small>Asus</small>
                 </div>
 
@@ -844,20 +879,25 @@
 
                     <div id="image-gallary" class="carousel carousel-dark slide" data-bs-ride="carousel">
                         <div class="carousel-indicators">
-                            <!-- <button type="button" data-bs-target="#image-gallary" data-bs-slide-to="0" class="active"
+                            <button type="button" data-bs-target="#image-gallary" data-bs-slide-to="0" class="active"
                                 aria-current="true" aria-label="Slide 1"></button>
-                            <button type="button" data-bs-target="#image-gallary" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                            <button type="button" data-bs-target="#image-gallary" data-bs-slide-to="2" aria-label="Slide 3"></button> -->
+                            <button type="button" data-bs-target="#image-gallary" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#image-gallary" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
                         </div>
                         <div class="carousel-inner">
                             <div class="carousel-item active" data-bs-interval="10000">
-                                <img src="https://images-na.ssl-images-amazon.com/images/I/61T0DkKlXNL._SL1500_.jpg" class="d-block w-100" alt="...">
+                                <img src="https://images-na.ssl-images-amazon.com/images/I/61T0DkKlXNL._SL1500_.jpg"
+                                    class="d-block w-100" alt="...">
                             </div>
                             <div class="carousel-item" data-bs-interval="2000">
-                                <img src="https://images-na.ssl-images-amazon.com/images/I/61ovbU0bd0L._SL1500_.jpg" class="d-block w-100" alt="...">
+                                <img src="https://images-na.ssl-images-amazon.com/images/I/61ovbU0bd0L._SL1500_.jpg"
+                                    class="d-block w-100" alt="...">
                             </div>
                             <div class="carousel-item">
-                                <img src="https://images-na.ssl-images-amazon.com/images/I/71Lx9l3NivL._SL1500_.jpg" class="d-block w-100" alt="...">
+                                <img src="https://images-na.ssl-images-amazon.com/images/I/71Lx9l3NivL._SL1500_.jpg"
+                                    class="d-block w-100" alt="...">
                             </div>
                         </div>
                     </div>
@@ -932,8 +972,10 @@
                         <div class="carousel-indicators">
                             <button type="button" data-bs-target="#specs" data-bs-slide-to="0" class="active"
                                 aria-current="true" aria-label="Slide 1"></button>
-                            <button type="button" data-bs-target="#specs" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                            <button type="button" data-bs-target="#specs" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            <button type="button" data-bs-target="#specs" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#specs" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
                         </div>
                         <div class="carousel-inner">
 
@@ -951,7 +993,8 @@
                                         <div class="div-table-col-info">Processor</div>
                                         <div class="div-table-col-info-details">Qualcomm Snapdragon 888</div>
                                     </div>
-                                    <div class="col" id="col-three"><img id="icons" src="../img/icons/operating system.svg" alt="">
+                                    <div class="col" id="col-three"><img id="icons"
+                                            src="../img/icons/operating system.svg" alt="">
                                         <div class="div-table-col-info">OS</div>
                                         <div class="div-table-col-info-details">Andriod 11</div>
                                     </div>
@@ -965,7 +1008,8 @@
                                         <div class="div-table-col-info">Front Camera</div>
                                         <div class="div-table-col-info-details">24MP</div>
                                     </div>
-                                    <div class="col" id="col-six"><img id="icons" src="../img/icons/batteries.svg" alt="">
+                                    <div class="col" id="col-six"><img id="icons" src="../img/icons/batteries.svg"
+                                            alt="">
                                         <div class="div-table-col-info">Battery Capacity</div>
                                         <div class="div-table-col-info-details">6000mAh</div>
                                     </div>
@@ -975,18 +1019,19 @@
                                         <div class="div-table-col-info">RAM</div>
                                         <div class="div-table-col-info-details">18GB</div>
                                     </div>
-                                    <div class="col" id="col-eight"><img id="icons" src="../img/icons/micro-sd-card.svg" alt="">
+                                    <div class="col" id="col-eight"><img id="icons" src="../img/icons/micro-sd-card.svg"
+                                            alt="">
                                         <div class="div-table-col-info">Storage</div>
                                         <div class="div-table-col-info-details">512GB</div>
                                     </div>
                                 </div>
-                            
+
                             </div>
 
                         </div>
                     </div>
 
-                   
+
                 </div>
 
                 <div class="bottom">
@@ -1005,10 +1050,10 @@
 
 
 
-    
 
-<button onclick="myFunction()">Try it</button>
-<div id="demo"></div>
+
+    <button onclick="myFunction()">Try it</button>
+    <div id="demo"></div>
 
 
     <section id="two">
