@@ -580,6 +580,7 @@
             font-size: 14px;
             font-style: normal;
             text-align: center;
+            display: none;
         }
 
         header {
@@ -662,8 +663,8 @@
             #one .flex-item-left {
                 /* background-color: orangered; */
             }
-/* 
-            #one .flex-item-right .div-table {
+
+            /* #one .flex-item-right .div-table {
                 width: 20% !important;
                 position: relative;
                 top: 300px;
@@ -686,6 +687,49 @@
             object-fit: contain;
         }
 
+        #one .flex-item-right #specs  button{
+            border-radius: 50%;
+            width: 10px;
+            height: 10px;
+        }
+
+        #one .flex-item-right #specs .header {
+            font-family: 'Julius Sans One', sans-serif;
+            font-weight: bolder;
+            font-size: 20px;
+        }
+
+
+        #one .flex-container {
+            border: 13px solid #a3a3a3;
+            border-radius: 30px;
+            border-top: 150px solid #a3a3a3;
+            border-bottom: 80px solid #a3a3a3;
+            border-top-left-radius: 0px;
+            border-top-right-radius: 0px;
+        }
+
+        #one .flex-item-right,
+        #one .flex-item-left {
+            margin-top: -180px;
+        }
+
+        #one .flex-container .header-top {
+            position: relative;
+            top: -150px;
+        }
+
+        #one .flex-container .header-top p {
+            font-family: 'Julius Sans One', sans-serif;
+            font-weight: bolder;
+            font-size: 30px;
+        }
+
+        #one .flex-container .bottom {
+            position: absolute;
+            top: 300px;
+            left: 10px;
+        }
         
 
         #one .flex-item-right #specs {
@@ -702,13 +746,18 @@
         @media (max-width: 767px) {
             #one .flex-item-left #image-gallary {
                 position: relative;
-                top: -0px; /* ------------------ Must be changed to -100px ------------------------*/
+                top: -100px !important; /* ------------------ Must be changed to -100px ------------------------*/
                 left: 0px;
             }
+
+
         }
 
         @media (max-width: 598px) {
             #one .flex-item-left #image-gallary {
+                position: relative;
+                top: 0px;
+                left: 10px;
                 height: 50%;
             }
 
@@ -719,10 +768,16 @@
             #one .flex-item-right #specs {
                 display: block !important;
                 position: relative;
-                top: 539px;
-                left: -45px;
+                top: 59px;
+                left: 0px;
                 width: 110%;
                 height: 40%;
+            }
+
+            #one .flex-item-right #specs  button,
+            #one .flex-item-left #image-gallary button {
+                position: relative;
+                top: 200px;
             }
 
             #one .flex-item-right #specs .key-specs-carousel {
@@ -772,54 +827,27 @@
 
 
 
+
+
+
     <section id="one">
         <div class="container">
             <div class="flex-container">
 
+                <div class="header-top">
+                <p>Asus ROG Phone 5 Ultimate</p>
+                    <small>Asus</small>
+                </div>
+
                 <div class="flex-item-left">
-
-                    <header>
-                        <p>Asus ROG Phone 5 Ultimate</p>
-                    </header>
-
-                    <br><br>
-
-                    <button onclick="myFunction()">Try it</button>
-                    <div id="demo"></div>
-
-
-
-
-
-                    <!-- <div class="img-gallary">
-                        <div class="img-gallary-list">
-                            <img src="https://images-na.ssl-images-amazon.com/images/I/61T0DkKlXNL._SL1500_.jpg"
-                                onclick="changeImg(this)">
-                            <img src="https://images-na.ssl-images-amazon.com/images/I/71Lx9l3NivL._SL1500_.jpg"
-                                onclick="changeImg(this)">
-                            <img src="https://images-na.ssl-images-amazon.com/images/I/61xeAF6pAoL._SL1500_.jpg"
-                                onclick="changeImg(this)">
-                            <img src="https://images-na.ssl-images-amazon.com/images/I/61AtwbunAaL._SL1500_.jpg"
-                                onclick="changeImg(this)">
-                            <img src="https://images-na.ssl-images-amazon.com/images/I/61ovbU0bd0L._SL1500_.jpg"
-                                onclick="changeImg(this)">
-                        </div>
-
-                        <div class="img-container">
-                            <img id="imageBox"
-                                src="https://images-na.ssl-images-amazon.com/images/I/61T0DkKlXNL._SL1500_.jpg">
-                        </div>
-                    </div> -->
-
-
 
 
                     <div id="image-gallary" class="carousel carousel-dark slide" data-bs-ride="carousel">
                         <div class="carousel-indicators">
-                            <button type="button" data-bs-target="#image-gallary" data-bs-slide-to="0" class="active"
+                            <!-- <button type="button" data-bs-target="#image-gallary" data-bs-slide-to="0" class="active"
                                 aria-current="true" aria-label="Slide 1"></button>
                             <button type="button" data-bs-target="#image-gallary" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                            <button type="button" data-bs-target="#image-gallary" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            <button type="button" data-bs-target="#image-gallary" data-bs-slide-to="2" aria-label="Slide 3"></button> -->
                         </div>
                         <div class="carousel-inner">
                             <div class="carousel-item active" data-bs-interval="10000">
@@ -835,7 +863,6 @@
                     </div>
 
 
-
                 </div>
 
                 <div class="flex-item-right">
@@ -848,10 +875,6 @@
 
                         </div>
                     </div>
-
-
-
-
 
                     <div class="div-table">
                         <div class="div-table-header">
@@ -905,10 +928,6 @@
                     </div>
 
 
-
-
-
-
                     <div id="specs" class="carousel carousel-dark slide" data-bs-ride="carousel">
                         <div class="carousel-indicators">
                             <button type="button" data-bs-target="#specs" data-bs-slide-to="0" class="active"
@@ -921,7 +940,7 @@
 
                             <div class="key-specs-carousel">
                                 <div class="header">
-                                    <div class="">Key Specs</div>
+                                    <p>Key Specs</p>
                                 </div>
                                 <div class="carousel-item  active" data-bs-interval="10000">
                                     <div class="col" id="col-one"><img id="icons" src="../img/icons/display.svg" alt="">
@@ -967,64 +986,29 @@
                         </div>
                     </div>
 
+                   
+                </div>
 
-
-
-
-
-                    <!-- <table>
-                        <thead>
-                            <tr>
-                                <th colspan="6">Key Specs</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td rowspan="2"><img id="icons" src="../img/icons/display.svg" alt=""></td>
-                                <td class="info">Display</td>
-                                <td rowspan="2"><img id="icons" src="../img/icons/cpu.svg" alt=""></td>
-                                <td class="info">Processor</td>
-                                <td rowspan="2"><img id="icons" src="../img/icons/operating system.svg" alt=""></td>
-                                <td class="info">OS</td>
-                            </tr>
-                            <tr>
-                                <td class="info-details">6.78-inch</td>
-                                <td class="info-details">Qualcomm Snapdragon 888</td>
-                                <td class="info-details">Andriod 11</td>
-                            </tr>
-                    
-                            <tr>
-                                <td rowspan="2"><img id="icons" src="../img/icons/camera.svg" alt=""></td>
-                                <td class="info">Camera</td>
-                                <td rowspan="2"><img id="icons" src="../img/icons/selfie.svg" alt=""></td>
-                                <td class="info">Front Camera</td>
-                                <td rowspan="2"><img id="icons" src="../img/icons/batteries.svg" alt=""></td>
-                                <td class="info">Battery Capacity</td>
-                            </tr>
-                            <tr>
-                                <td class="info-details">64MP + 13MP + 5MP</td>
-                                <td class="info-details">24MP</td>
-                                <td class="info-details">6000mAh</td>
-                            </tr>
-                    
-                            <tr>
-                                <td rowspan="2"><img id="icons" src="../img/icons/ram.svg" alt=""></td>
-                                <td class="info">RAM</td>
-                                <td rowspan="2"><img id="icons" src="../img/icons/micro-sd-card.svg" alt=""></td>
-                                <td class="info">Storage</td>
-                            </tr>
-                            <tr>
-                                <td class="info-details">18GB</td>
-                                <td class="info-details">512GB</td>
-                            </tr>
-                        </tbody>
-                    </table> -->
-
+                <div class="bottom">
+                    <small>&#x21; Swipe to see more</small>
                 </div>
 
             </div>
         </div>
     </section>
+
+
+
+
+
+
+
+
+
+    
+
+<button onclick="myFunction()">Try it</button>
+<div id="demo"></div>
 
 
     <section id="two">
