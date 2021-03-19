@@ -730,7 +730,7 @@
 
 
         #two {
-            margin-top: 500px;
+            margin-top: 100px;
         }
 
         
@@ -753,7 +753,7 @@
         @media (max-width: 767px) {
             #one .flex-item-left #image-gallary {
                 position: relative;
-                top: -100px !important;
+                top: -10px !important;
                 /* ------------------ Must be changed to -100px ------------------------*/
                 left: 0px;
             }
@@ -823,6 +823,50 @@
 
         }
 
+
+
+        @media (min-width: 490px) and (max-width: 767px) {
+            #one .flex-item-right,
+            #one .flex-item-left {
+                margin-top: -330px;
+                margin-bottom: -130px;
+            }
+
+            #one .flex-item-left #image-gallary {
+                position: relative;
+                top: -70px !important;
+                left: 20px;
+            }
+
+            #one .flex-container .bottom {
+                position: absolute;
+                top: 400px;
+                left: 45px;
+            }
+        }
+ 
+
+
+        @media (min-width: 289px) and (max-width: 490px) {
+            #one .flex-item-right,
+            #one .flex-item-left {
+                margin-top: -380px;
+                margin-bottom: -130px;
+            }
+
+            #one .flex-item-left #image-gallary {
+                position: relative;
+                top: -80px !important;
+                left: 20px;
+            }
+
+            #one .flex-container .bottom {
+                position: absolute;
+                top: 350px;
+                left: 35px;
+            }
+        }
+
         @media (max-width: 598px) {
             
 
@@ -887,16 +931,16 @@
                                 aria-label="Slide 3"></button>
                         </div>
                         <div class="carousel-inner">
-                            <div class="carousel-item active" data-bs-interval="10000">
+                            <div class="carousel-item" data-bs-interval="2000">
                                 <img src="https://images-na.ssl-images-amazon.com/images/I/61T0DkKlXNL._SL1500_.jpg"
+                                    class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item active" data-bs-interval="2000">
+                                <img src="https://images-na.ssl-images-amazon.com/images/I/71Lx9l3NivL._SL1500_.jpg"
                                     class="d-block w-100" alt="...">
                             </div>
                             <div class="carousel-item" data-bs-interval="2000">
                                 <img src="https://images-na.ssl-images-amazon.com/images/I/61ovbU0bd0L._SL1500_.jpg"
-                                    class="d-block w-100" alt="...">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="https://images-na.ssl-images-amazon.com/images/I/71Lx9l3NivL._SL1500_.jpg"
                                     class="d-block w-100" alt="...">
                             </div>
                         </div>
@@ -984,7 +1028,7 @@
                                 <div class="header">
                                     <p>Key Specs</p>
                                 </div>
-                                <div class="carousel-item  active" data-bs-interval="10000">
+                                <div class="carousel-item  active" data-bs-interval="2000">
                                     <div class="col" id="col-one"><img id="icons" src="../img/icons/display.svg" alt="">
                                         <div class="div-table-col-info">Display</div>
                                         <div class="div-table-col-info-details">6.78-inch</div>
@@ -1014,7 +1058,7 @@
                                         <div class="div-table-col-info-details">6000mAh</div>
                                     </div>
                                 </div>
-                                <div class="carousel-item ">
+                                <div class="carousel-item " data-bs-interval="2000">
                                     <div class="col" id="col-seven"><img id="icons" src="../img/icons/ram.svg" alt="">
                                         <div class="div-table-col-info">RAM</div>
                                         <div class="div-table-col-info-details">18GB</div>
