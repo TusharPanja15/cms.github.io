@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!--Bootstrap CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    <!--External Custom CSS-->
+    <link rel="stylesheet" href="../css/common.css">
+
+    <style type="text/css">
+        .card {
+            border: none;
+        }
+
+        #one .flex-container {
+            display: flex;
+            flex-wrap: wrap;
+            position: relative;
+            top: 150px;
+            height: 100%;
+            margin-bottom: 300px;
+        }
+
+        #one .flex-item-right {
+            padding: 60px;
+            flex: 70%;
+            /* background-color: burlywood; */
+        }
+
+        #one .flex-item-left {
+            padding: 10px;
+            flex: 10%;
+            /* background-color: crimson; */
+        }
+
+        #one .flex-item-left img {
+            object-fit: cover;
+            height: 200px;
+            margin-bottom: 40px;
+        }
+
+        #one .flex-right-item {
+            padding: 5px;
+            margin: 0px 0px 40px 0px;
+            flex: 25%;
+            text-align: center;
+        }
+
+        #one .flex-right-item img {
+            object-fit: contain;
+            height: 115px;
+        }
+
+        #one .flex-left-item {
+            padding: 5px;
+            margin: 20px 0px -50px 0px;
+        }
+
+        #one .flex-left-item .card-body {
+            color: white;
+            font-size: xx-large;
+            background-color: rgba(0, 0, 0, 0.336);
+            position: absolute;
+            top: 40px;
+            margin-top: -40px;
+            height: 200px;
+        }
+
+        #one .flex-left-item .card-body .card-title {
+            position: relative;
+            top: 70px;
+            margin: 0px;
+            width: 100%;
+        }
+
+        @media (max-width: 992px) {
+            #one .flex-left-item {
+                display: none;
+            }
+
+            #one .flex-item-right {
+                padding: 10px;
+                flex: 100%;
+                margin-top: 0px;
+            }
+
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- NAV BARS -->
+    <nav id="navs"></nav>
+
+    <section id="one">
+        <div class="container">
+            <div class="flex-container">
+
+                <div class="flex-item-left">
+
+                    <img class="svg-icon" src="../img/icons/smartphone.svg">
+
+                    <h1 class="heading">SMARTPHONES</h1>
+
+                    <p>A smartphone is a mobile device that combines cellular and mobile computing functions into one
+                        unit. They are
+                        distinguished from feature phones by their stronger hardware capabilities and extensive mobile
+                        operating systems, which
+                        facilitate wider software, internet, and multimedia functionality, alongside core phone
+                        functions such as voice calls
+                        and text messaging.<a href="https://en.wikipedia.org/wiki/Smartphone"> More</a></p>
+
+                    <br><br><br><br>
+
+
+
+                    <div class="flex-left-item">
+                        <h1 class="heading">RELATED ARTICLES:</h1>
+                    </div>
+
+                    <br>
+
+                    <div class="flex-left-item">
+                        <div class="card">
+                            <img src="https://simpleflying.com/wp-content/uploads/2021/03/PILOTS-IN-THE-COCKPIT-OF-A330-QATAR-MSN871-002-800x533.jpeg"
+                                class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title">Audi Q4 E-Tron electric SUV promises AR head-up
+                                    display, clever storage</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex-left-item">
+                        <div class="card">
+                            <img src="https://simpleflying.com/wp-content/uploads/2021/03/PILOTS-IN-THE-COCKPIT-OF-A330-QATAR-MSN871-002-800x533.jpeg"
+                                class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title">Audi Q4 E-Tron electric SUV promises AR head-up
+                                    display, clever storage</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="flex-item-right">
+
+                    <h1 class="heading">ALL SMARTPHONE'S BRANDS</h1>
+
+                    <div class=" flex-container">
+
+                        <div class="flex-right-item">
+                            <a href="phones.html">
+                                <div class="card">
+                                    <img src="../img/icons/google.svg" alt="">
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="flex-right-item">
+                            <div class="card">
+                                <img src="../img/icons/samsung.svg" alt="">
+                            </div>
+                        </div>
+
+                        <div class="flex-right-item">
+                            <div class="card">
+                                <img src="../img/icons/apple.svg" alt="">
+                            </div>
+                        </div>
+
+                        <div class="flex-right-item">
+                            <div class="card">
+                                <img src="../img/icons/asus.svg" alt="">
+                            </div>
+                        </div>
+
+                        <div class="flex-right-item">
+                            <div class="card">
+                                <img src="../img/icons/dell.svg" alt="">
+                            </div>
+                        </div>
+
+                        <div class="flex-right-item">
+                            <div class="card">
+                                <img src="../img/icons/hp.svg" alt="">
+                            </div>
+                        </div>
+
+                        <div class="flex-right-item">
+                            <div class="card">
+                                <img src="../img/icons/lenovo.svg" alt="">
+                            </div>
+                        </div>
+
+                        <div class="flex-right-item">
+                            <div class="card">
+                                <img src="../img/icons/lg.svg" alt="">
+                            </div>
+                        </div>
+
+                        <div class="flex-right-item">
+                            <div class="card">
+                                <img src="../img/icons/motorola.svg" alt="">
+                            </div>
+                        </div>
+
+                        <div class="flex-right-item">
+                            <div class="card">
+                                <img src="../img/icons/nokia.svg" alt="">
+                            </div>
+                        </div>
+
+                        <div class="flex-right-item">
+                            <div class="card">
+                                <img src="../img/icons/xiaomi.svg" alt="">
+                            </div>
+                        </div>
+
+                        <div class="flex-right-item">
+                            <div class="card">
+                                <img src="../img/icons/google.svg" alt="">
+                            </div>
+                        </div>
+
+                        <div class="flex-right-item">
+                            <div class="card">
+                                <img src="../img/icons/google.svg" alt="">
+                            </div>
+                        </div>
+
+                        <div class="flex-right-item">
+                            <div class="card">
+                                <img src="../img/icons/google.svg" alt="">
+                            </div>
+                        </div>
+
+                        <div class="flex-right-item">
+                            <div class="card">
+                                <img src="../img/icons/google.svg" alt="">
+                            </div>
+                        </div>
+
+                        <div class="flex-right-item">
+                            <div class="card">
+                                <img src="../img/icons/google.svg" alt="">
+                            </div>
+                        </div>
+
+                        <div class="flex-right-item">
+                            <div class="card">
+                                <img src="../img/icons/google.svg" alt="">
+                            </div>
+                        </div>
+
+                        <div class="flex-right-item">
+                            <div class="card">
+                                <img src="../img/icons/google.svg" alt="">
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer id="footer"></footer>
+
+
+    <!--Bootstrap JavaScript-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js "
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW "
+        crossorigin="anonymous "></script>
+
+    <!--External JavaScript-->
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.40/js/uikit.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.40/js/uikit-icons.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.js"></script>
+
+    <!--Custom JavaScript-->
+    <script type="text/javascript" src="../js/common.js"></script>
+
+    <script type="text/javascript">
+
+        function myFunction() {
+            var w = window.innerWidth;
+            var h = window.innerHeight;
+            document.getElementById("demo").innerHTML = "Width: " + w + "<br>Height: " + h;
+        }
+
+        // LOAD HOME PAGE
+        document.getElementById("back").onclick = function () {
+            location.href = "index.html";
+        };
+    </script>
+
+</body>
+
+</html>

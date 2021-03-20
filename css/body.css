@@ -1,0 +1,417 @@
+.hr-dotted {
+    border-top: 2.6px dashed #b5a49b;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+h4:hover {
+    color: orange;
+    text-decoration: none;
+}
+
+h4:visited {
+    color: #006fcf;
+    text-decoration: underline;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    top: -350px;
+    height: 100%;
+    margin-bottom: 200px;
+}
+
+.flex-item-left {
+    padding: 10px;
+    flex: 20%;
+}
+
+.flex-item-right {
+    padding: 10px;
+    flex: 75%;
+}
+
+.row .flex-center-left, .row .flex-center-right {
+    width: 100%;
+    flex: 10%;
+}
+
+.row .flex-center-left {
+    margin-left: 80px;
+}
+
+/* Responsive layout - makes a one column-layout instead of a two-column layout */
+
+@media (max-width: 995px) {
+    .row .flex-center-left, .row .flex-center-right {
+        flex: 100%;
+        margin-left: 0px;
+    }
+    .flex-center-left {
+        order: 1;
+    }
+    .flex-center-right {
+        order: 2;
+    }
+}
+
+@media (min-width: 1200px) {
+    .flex-item-right, .flex-item-left {
+        flex: 1%;
+    }
+}
+
+@media (max-width: 800px) {
+    .flex-item-center {
+        flex: 100%;
+    }
+}
+
+@media (max-width: 1200px) {
+    .flex-item-right, .flex-item-left {
+        display: none;
+    }
+}
+
+.flex-center-right {
+    width: 620px;
+    height: 800px;
+}
+
+.flex-center-right .card {
+    margin-top: 20px;
+    border: none;
+}
+
+.flex-center-right .card img {
+    height: 300px;
+}
+
+.flex-center-right .card .card-img-overlay {
+    background: rgba(0, 0, 0, 0.5);
+    width: 96%;
+    height: 100%;
+    margin-left: 2%;
+}
+
+.flex-center-right .card .card-img-overlay .card-title {
+    color: white;
+    margin-top: 150px;
+    font-size: 25px;
+}
+
+.flex-center-right .card .card-img-overlay .card-text small {
+    color: white;
+}
+
+.flex-center-left img {
+    height: 119px;
+    width: 120px;
+}
+
+.flex-center-left .card {
+    width: 100%;
+    margin-left: 23px;
+    height: 120px;
+    border: none;
+}
+
+.flex-center-left .card .card-body {
+    margin-left: -50px;
+}
+
+@media (min-width: 994px) and (max-width:1198px) {
+    .flex-center-left .card .card-body {
+        margin-left: 0px;
+    }
+}
+
+@media (max-width: 767) {
+    .flex-center-left .card .card-body {}
+}
+
+@media (max-width: 1199px) {
+    .flex-center-left .card img {
+        width: 120px;
+        height: 118px;
+    }
+}
+
+@media (max-width: 993px) {
+    .flex-center-left .card img, #one .flex-center-left .card:hover .middle-small {
+        width: 129px;
+        height: 129px;
+    }
+    #one .flex-center-left .card:hover .middle-small {
+        position: absolute;
+        left: 66px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 995px) {
+    .flex-center-left .card {
+        width: 100%;
+        height: 130px;
+        margin-left: 180px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+    .flex-center-left .card {
+        width: 100%;
+        height: 130px;
+        margin-left: 60px;
+    }
+}
+
+@media (max-width: 767px) {
+    .flex-center-left .card {
+        width: 300px;
+        margin: 0px 0px 50px 0px !important;
+    }
+}
+
+@media (max-width: 992px) {
+    .card-body-wrap {
+        display: none;
+    }
+}
+
+@media (min-width: 450px) and (max-width: 768px) {
+    .header-img-content {
+        position: relative;
+        top: 150px;
+        width: 350px;
+    }
+    .flex-center-left .card img, #one .flex-center-left .card:hover .middle-small {
+        width: 140px;
+        height: 90px;
+    }
+    #one .flex-center-left .card:hover .middle-small {
+        position: absolute;
+        left: 75px;
+        top: 45px;
+    }
+}
+
+@media (min-width: 315px) and (max-width: 450px) {
+    .header-img-content {
+        width: 100px;
+        position: relative;
+        top: 120px;
+    }
+    .flex-center-left .card img, #one .flex-center-left .card:hover .middle-small {
+        width: 130px;
+        height: 90px;
+    }
+    #one .flex-center-left .card:hover .middle-small {
+        position: absolute;
+        left: 65px;
+        top: 45px;
+    }
+}
+
+@media (max-width: 553px) {
+    .header-img-content {
+        position: relative;
+        width: 350px;
+    }
+    .header-img-content p {
+        display: none
+    }
+    .flex-center-left .card .card-body {
+        width: 240px;
+        position: absolute;
+        top: -20px;
+        left: 190px;
+    }
+}
+
+@media (max-width: 450px) {
+    .header-img-content {
+        width: 100px;
+    }
+    .header-img-container {
+        width: 450px;
+    }
+    .flex-center-left .card .card-body {
+        width: 240px;
+        position: absolute;
+        top: -20px;
+        left: 175px;
+    }
+}
+
+@media (max-width: 315px) {
+    .header-img-content {
+        position: relative;
+        top: 150px;
+        width: 350px;
+    }
+    .header-img-content p {
+        display: none
+    }
+    .flex-center-left .card .card-body {
+        position: absolute;
+        top: -10px;
+        left: 175px;
+        width: 240px;
+    }
+}
+
+@media (min-width: 553px) and (max-width: 767px) {
+    .flex-center-left .card .card-body {
+        position: relative;
+        top: -100px;
+        left: 200px;
+        width: 290px;
+    }
+}
+
+@media (max-width: 444px) {
+    .flex-center-right .card .card-body {
+        width: 350px;
+    }
+}
+
+@media (max-width: 995px) {
+    .more-button {
+        margin-bottom: 80px;
+    }
+}
+
+@media (min-width: 996px) {
+    #hide-hr {
+        display: none;
+    }
+}
+
+#two {
+    margin-top: -350px;
+}
+
+#three .flex-container {
+    align-items: center;
+    position: relative;
+    top: 0px;
+    bottom: 0px;
+    margin: 0 auto;
+    margin-bottom: 600px;
+}
+
+.flex-center-right .first .row .card:hover, .flex-center-right .second .row .card:hover {
+    color: rgb(255, 235, 58);
+}
+
+.flex-center-right .first .container .card h5:hover, .flex-center-right .second .container .card h5:hover, .flex-center-left .first .card:hover, .flex-center-left .second .card:hover {
+    color: rgb(50, 98, 255);
+}
+
+.middle {
+    opacity: 0;
+    position: absolute;
+    left: -5px;
+    padding-top: 130px;
+    text-align: center;
+}
+
+.middle-small {
+    transition: .2s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 11%;
+    padding-top: 30px;
+    width: 7.5rem;
+    height: 119px;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+#one .flex-center-right .card:hover .middle, #one .flex-center-left .card:hover .middle-small {
+    background: rgba(0, 0, 0, 0.356);
+    color: white;
+    opacity: 1;
+}
+
+#one .flex-center-right .card:hover .middle {
+    width: 100%;
+    height: 300px;
+}
+
+.flex-center-right .first .card .text {
+    color: white;
+    font-size: 22px;
+    font-weight: 600;
+    padding: 6px 2px;
+}
+
+@media (max-width: 450px) {
+    #three .flex-item-center {
+        position: relative;
+        top: 1250px;
+    }
+    #three .flex-center-right .row .card {
+        width: 300px;
+        height: 120px;
+        position: relative;
+        top: -20px;
+        left: 10px;
+        margin-bottom: 20px;
+    }
+    #three .flex-center-right .card img {
+        height: 90px;
+        width: 130px;
+        position: relative;
+        left: -10px;
+    }
+    #three .flex-center-right .card-body {
+        position: absolute;
+        top: -20px;
+        left: 115px !important;
+        width: 210px;
+    }
+    #one .flex-center-left .card-body {
+        width: 210px;
+    }
+    #three .flex-center-right .card .card-hidden {
+        display: none;
+    }
+}
+
+@media (min-width: 451px) and (max-width: 993px) {
+    #three {
+        margin-top: 440px;
+        margin-bottom: 400px;
+    }
+}
+
+@media (max-width: 996px) {
+    .flex-item-center .flex-center-right .first, .flex-item-center .flex-center-left .first, .flex-item-center .flex-center-right .second, .flex-item-center .flex-center-left .second, .flex-item-center .flex-center-right .third, .flex-item-center .flex-center-left .third {
+        flex: 100%;
+    }
+    .flex-item-center .flex-center-right .first {
+        order: 1;
+    }
+    .flex-item-center .flex-center-left .first {
+        order: 2;
+    }
+    .flex-item-center .flex-center-right .second {
+        order: 3;
+    }
+    .flex-item-center .flex-center-left .second {
+        order: 4;
+    }
+    .flex-item-center .flex-center-right .third {
+        order: 5;
+    }
+    .flex-item-center .flex-center-left .third {
+        order: 6;
+    }
+}

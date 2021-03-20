@@ -1,0 +1,228 @@
+.crop-height {
+    /* max-width: 1200px; /* native or declared width of img src (if known) */
+    max-height: 700px;
+    overflow: hidden;
+}
+
+img.scale {
+    /* corrects small inline gap at bottom of containing div */
+    display: block;
+    width: 100%;
+    /* corrects obscure Firefox bug */
+    max-width: 100%;
+    /* just in case, to force correct aspect ratio */
+    height: auto !important;
+    display: block;
+    /* corrects small inline gap at bottom of containing div */
+    width: 100%;
+    /* corrects obscure Firefox bug */
+    max-width: 100%;
+    /* just in case, to force correct aspect ratio */
+    height: auto !important;
+    /*width: auto\9; 
+  /* ie8+9 - use modernizr instead of this \9 hack */
+    /* lt ie8 */
+    -ms-interpolation-mode: bicubic;
+    /* optionally force a minimum size if img src size is known: */
+    /* min-height: 320px; /* max-height of .crop-height */
+    /* min-width: 480px; /* proportional to above */
+}
+
+.bg-image {
+    background-image: url(https://cdn.motor1.com/images/mgl/KNPZA/s1/nasa-perseverance-mars-rover.jpg);
+    /* lt ie8 */
+    -ms-background-position-x: center;
+    -ms-background-position-y: bottom;
+    /* default - may override with classes or media query */
+    background-position: center bottom;
+    /* scale bg image proportionately */
+    background-size: cover;
+    /* ie8 - https://github.com/louisremi/background-size-polyfill */
+    -ms-behavior: url(backgroundsize.min.htc);
+    /* prevent scaling past src width (or not) */
+    /* max-width: 1200px; */
+}
+
+.bg-center-bottom {
+    /* lt ie8 if needed */
+    /* -ms-background-position-x: center;
+	-ms-background-position-y: bottom; */
+    background-position: center bottom;
+}
+
+.bg-center-center {
+    /* lt ie8 if needed */
+    /* -ms-background-position-x: center;
+	-ms-background-position-y: center; */
+    background-position: center center;
+}
+
+.bg-position {
+    /* background position for specific image */
+    /* lt ie8 if needed */
+    /* -ms-background-position-x: 30%;
+	-ms-background-position-y: 60%; */
+    background-position: 30% 60%;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+/* opacity allows user-friendly image saving */
+
+.transparent {
+    /* trigger hasLayout for ie filters below */
+    zoom: 1;
+    /* 0 opacity in ms filters still displays layout */
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)" filter: alpha(opacity=0);
+    opacity: 0;
+}
+
+/* presentational CSS below */
+
+.page-wrap {
+    padding-top: .5em;
+}
+
+figure {
+    margin: 2em 0px;
+}
+
+figcaption {
+    margin: .5em 0;
+    font-size: 85%;
+    font-style: italic;
+    color: #888;
+}
+
+.header-container {
+}
+
+@media (max-width: 728px) {
+    .header-container {
+        position: relative;
+        top: 0px;
+    }
+}
+
+.header-img-container .header-img-content {
+    position: absolute;
+    bottom: 0;
+    background: rgb(0, 0, 0);
+    /* Fallback color */
+    background: rgba(0, 0, 0, 0.5);
+    /* Black background with 0.5 opacity */
+    color: #f1f1f1;
+    width: 100%;
+}
+
+.header-img-content h1, .card-body-wrap h5 {
+    color: white;
+}
+
+.header-img-content .card-text, .card-body-wrap .card-text {
+    color: rgb(229, 226, 226);
+}
+
+.header-img-content {
+    margin-top: 200px;
+}
+
+.header-img-content h1:hover, .card-body-wrap h5:hover {
+    color: rgb(182, 179, 179);
+}
+
+.header-img-content h1:visited {
+    color: yellowgreen;
+}
+
+.card-body-wrap {
+    width: 440px;
+    height: 100%;
+    padding: 20px 0px 0px 0px;
+    margin: 14px 0px 0px 0px;
+    background: rgba(80, 125, 212, 0.8);
+    float: right;
+}
+
+.card-body-wrap .card {
+    width: 408px;
+    margin: 0px 0px 0px 15px;
+}
+
+.card-body-wrap .card {
+    background-color: rgba(80, 125, 212, 0);
+}
+
+.card-body-wrap, .card-body-wrap .card, .card-body-wrap img {
+    border-radius: 4px;
+    border: none;
+}
+
+.card-body-wrap img {
+    width: 100px;
+    height: 100px;
+    margin: 20px 0px 0px 20px;
+}
+
+.container-content {
+    position: relative;
+    top: -530px;
+}
+
+.page-wrap img {
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.header-img-content h1, .header-img-content p {
+    font-weight: 500;
+    color: cornsilk;
+}
+
+@media (max-width: 993px) and (min-width: 768px) {
+    .card-body-wrap {
+        position: relative;
+        top: 700px;
+        left: -200px;
+        float: left;
+        width: 100%;
+    }
+    .header-img-content h1, .header-img-content p {
+        float: left;
+        position: relative;
+        top: 80px;
+        width: 700px;
+    }
+}
+
+@media (max-width: 768px) {
+    .header-img-content h1, .header-img-content p {
+        float: left;
+        position: relative;
+        top: -200px;
+    }
+    .card-body-wrap {
+        position: relative;
+        top: -200px;
+        float: left;
+        width: 100%;
+    }
+    .card-body-wrap .card {
+        width: 490px;
+        height: 100px;
+    }
+    .card-body-wrap .card img {
+        margin: 0px 0px 0px 0px;
+        position: relative;
+        left: 380px;
+        top: -110px;
+    }
+    .card-body-wrap .card-body {
+        width: 400px;
+    }
+}
+
+.page-wrap {
+    height: 690px;
+}
