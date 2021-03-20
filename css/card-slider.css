@@ -20,8 +20,6 @@
     .card-slider .main {
         grid-area: main;
         padding: 0;
-        overflow-x: scroll;
-        overflow-y: hidden;
     }
     .card-slider .items {
         position: relative;
@@ -34,6 +32,18 @@
         will-change: transform;
         user-select: none;
         cursor: pointer;
+    }
+    .card-slider .items::-webkit-scrollbar {
+        width: 10px;
+        height: 10px;
+    }
+    .card-slider .items::-webkit-scrollbar-track {
+        background-color: transparent;
+        border-radius: 10px;
+    }
+    .card-slider .items::-webkit-scrollbar-thumb {
+        background-color: rgba(0, 0, 0, 0.4);
+        border-radius: 10px;
     }
     .card-slider .items.active {
         cursor: grabbing;
@@ -55,7 +65,7 @@
     }
     .card-slider .item:hover {
         border: 1px solid #b4b4b4;
-        box-shadow: 0 6px 10px rgba(0, 0, 0, 0.08), 0 0 6px rgba(0, 0, 0, 0.507);
+        box-shadow: 0 6px 10px rgba(0, 0, 0, 0.08), 0 0 6px rgba(0, 0, 0, 0.808);
         transition: 0.3s transform cubic-bezier(0.155, 1.105, 0.295, 1.12), 0.3s box-shadow, 0.3s -webkit-transform cubic-bezier(0.155, 1.105, 0.295, 1.12);
         cursor: pointer;
     }
