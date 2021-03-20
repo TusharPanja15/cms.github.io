@@ -1,10 +1,6 @@
 // NAVBARS
-// For index.html
-$(document).ready(function () {
-    $('#navs').load("common/navbar.html");
-});
 
-// For news.html
+// For docs/index.html
 $(document).ready(function () {
     $('#navs').load("../common/navbar.html");
 });
@@ -12,12 +8,8 @@ $(document).ready(function () {
 //-----------------------------------------------------------------------------------------------------------------------------
 
 // FOOTER
-// For index.html
-$(document).ready(function () {
-    $('#footer').load("common/footer.html");
-});
 
-// For news.html
+// For docs/index.html
 $(document).ready(function () {
     $('#footer').load("../common/footer.html");
 });
