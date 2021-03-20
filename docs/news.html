@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Bootstrap CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    <!--External Custom CSS-->
+    <link rel="stylesheet" href="../css/common.css">
+
+    <style type="text/css">
+        .flex-container {
+            display: flex;
+            flex-wrap: wrap;
+            position: relative;
+            top: 50px;
+            height: 100%;
+            margin-bottom: 200px;
+        }
+
+        .flex-item-left {
+            padding: 10px;
+            flex: 70%;
+        }
+
+        .flex-item-right {
+            padding: 10px;
+            flex: 20%;
+        }
+
+        @media (max-width: 992px) {
+            .flex-item-right {
+                display: none;
+            }
+        }
+
+        .flex-item-left .card {
+            margin: 0 auto;
+            width: 95%;
+            border: none;
+        }
+
+        .flex-item-left .card:hover h3 {
+            color: orangered;
+        }
+
+        .flex-item-left .card:hover h1 {
+            color: orange;
+        }
+
+        .flex-item-left .card .col-md-4 img {
+            width: 200px;
+            height: 200px;
+        }
+
+        .flex-item-left .img-overlay,
+        .flex-item-left .img-overlay img {
+            height: 380px;
+        }
+
+        .flex-item-left .img-overlay .card-img-overlay {
+            background: rgba(0, 0, 0, 0.356);
+            color: white;
+            width: 97%;
+            height: 100%;
+            position: absolute;
+            top: 0px;
+            left: 14px;
+        }
+
+        .flex-item-left .img-overlay .card-img-overlay .card-title,
+        .flex-item-left .img-overlay .card-img-overlay .card-text {
+            width: 70%;
+            position: relative;
+            top: 200px;
+        }
+
+        @media (max-width: 768px) {
+            .flex-item-left .card {
+                width: 100%;
+            }
+
+            .flex-item-left .card .col-md-4 img {
+                width: 140px;
+                height: 90px;
+            }
+
+            .flex-item-left .card .card-body {
+                width: 70%;
+                margin-bottom: -115px;
+                position: relative;
+                top: -108px;
+                left: 140px;
+            }
+
+            .flex-item-left .card .card-body .card-text {
+                display: none;
+            }
+
+            .flex-item-left .img-overlay .card-img-overlay .card-title {
+                position: relative;
+                font-size: x-large;
+            }
+
+            .flex-item-left .img-overlay .card-img-overlay {
+                width: 95%;
+            }
+        }
+
+        @media (min-width: 1400px) {
+            .flex-item-left .card .card-body {
+                position: relative;
+                left: -80px;
+            }
+        }
+
+        @media (min-width: 315px) and (max-width: 450px) {
+            .flex-item-left .card .col-md-4 img {
+                width: 130px;
+                height: 90px;
+            }
+
+            .flex-item-left .card .card-body {
+                width: 212px;
+                position: relative;
+                top: -105px;
+                left: 130px;
+            }
+
+            .flex-item-left .card .card-body .card-title {
+                font-size: large;
+            }
+        }
+
+        @media (min-width: 320px) and (max-width: 426px) {
+            .flex-item-left .img-overlay .card-img-overlay {
+                width: 93%;
+            }
+        }
+
+        @media (min-width: 427px) and (max-width: 498px) {
+            .flex-item-left .img-overlay .card-img-overlay {
+                width: 94%;
+            }
+        }
+
+        @media (min-width: 502px) and (max-width: 768px) {
+            .flex-item-left .img-overlay .card-img-overlay {
+                width: 95%;
+            }
+        }
+
+        @media (min-width: 768px) and (max-width: 992px) {
+            .flex-item-left .img-overlay .card-img-overlay {
+                width: 96%;
+            }
+        }
+
+        @media (min-width: 1051px) and (max-width: 1200px) {
+            .flex-item-left .img-overlay .card-img-overlay {
+                width: 96%;
+            }
+        }
+
+        @media (min-width: 992px) and (max-width: 1398px) {
+
+            .flex-item-left .img-overlay .card-img-overlay .card-title,
+            .flex-item-left .img-overlay .card-img-overlay .card-text {
+                position: relative;
+                top: 150px;
+            }
+        }
+    </style>
+
+    <title>More Latest News</title>
+</head>
+
+<body>
+
+    <!-- NAV BARS -->
+    <nav id="navs"></nav>
+
+    <br><br><br><br><br><br>
+
+    <section>
+        <div class="container">
+            <div class="flex-container">
+
+                <div class="flex-item-left">
+                    <div class="row">
+
+                        <h1 class="heading">LATEST STORIES</h1>
+
+                        <button onclick="myFunction()">Try it</button>
+                        <div id="demo"></div>
+
+                        <br><br><br>
+
+                        <div class="card mb-3">
+                            <div class="row g-0">
+                                <div class="col-md-4">
+                                    <img
+                                        src="https://www.thehindu.com/entertainment/movies/vpdjas/article33372650.ece/ALTERNATES/LANDSCAPE_1200/mando">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <a href="news-details.html">
+                                            <h3 class="card-title">How this technology changed the green screen forever
+                                            </h3>
+                                            <p class="card-text">This is a wider card with supporting text below as a
+                                                natural lead-in to additional
+                                                content. This content is a little bit longer.</p>
+                                            <p><small class="text-muted">Last updated 3 mins ago</small></p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <hr>
+
+                        <div class="card mb-3">
+                            <div class="row g-0">
+                                <div class="col-md-4">
+                                    <img
+                                        src="https://cdn.pocket-lint.com/r/s/1200x/assets/images/155378-phones-review-hands-on-samsung-galaxy-s21-ultra-image1-luae09ici4.JPG">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h3 class="card-title">The future of smartphone is here</h3>
+                                        <p class="card-text">This is a wider card with supporting text below as a
+                                            natural lead-in to additional
+                                            content. This content is a little bit longer.</p>
+                                        <p><small class="text-muted">Last updated 3 mins ago</small></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <hr>
+
+                        <div class="card mb-3">
+                            <div class="row g-0">
+                                <div class="col-md-4">
+                                    <img src="https://www.blueorigin.com/assets/BlueOrigin_NewShepard_Launch.jpg">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h3 class="card-title">Card title</h3>
+                                        <p class="card-text">This is a wider card with supporting text below as a
+                                            natural lead-in to additional
+                                            content. This content is a little bit longer.</p>
+                                        <p><small class="text-muted">Last updated 3 mins ago</small></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <hr>
+
+                        <div class="card mb-3">
+                            <div class="row g-0">
+                                <div class="col-md-4">
+                                    <img
+                                        src="https://d13ezvd6yrslxm.cloudfront.net/wp/wp-content/images/The-Falcon-and-the-Winter-Soldier-trailer-700x300.jpg">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h3 class="card-title">Marvel Cinematic Universe Phase 4: The full list of
+                                            release dates</h3>
+                                        <p class="card-text">This is a wider card with supporting text below as a
+                                            natural lead-in to additional
+                                            content. This content is a little bit longer.</p>
+                                        <p><small class="text-muted">Last updated 3 mins ago</small></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <hr>
+
+                        <div class="card img-overlay">
+                            <img src="https://images.immediate.co.uk/production/volatile/sites/3/2020/09/loki-tv-show-ddb01c2.jpg?quality=90&resize=620,413"
+                                class="card-img">
+                            <div class="card-img-overlay">
+                                <h1 class="card-title">Marvel Cinematic Universe Phase 4: The full list of release dates
+                                </h1>
+                                <p class="card-text">Last updated 3 mins ago</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="flex-item-right">
+                    <div class="more-button d-grid gap-2 col-6 mx-auto">
+                        <button class="btn btn-outline-warning" type="button" id="back">Back</button>
+                    </div>
+
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer id="footer"></footer>
+
+
+    <!--Bootstrap JavaScript-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js "
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW "
+        crossorigin="anonymous "></script>
+
+    <!--External JavaScript-->
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.40/js/uikit.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.40/js/uikit-icons.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.js"></script>
+
+    <!--Custom JavaScript-->
+    <script type="text/javascript" src="../js/common.js"></script>
+
+    <script type="text/javascript">
+
+        function myFunction() {
+            var w = window.innerWidth;
+            var h = window.innerHeight;
+            document.getElementById("demo").innerHTML = "Width: " + w + "<br>Height: " + h;
+        }
+
+        // LOAD HOME PAGE
+        document.getElementById("back").onclick = function () {
+            location.href = "index.html";
+        };
+    </script>
+
+</body>
+
+</html>
