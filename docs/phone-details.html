@@ -16,6 +16,7 @@
 
     <!--External Custom CSS-->
     <!-- <link rel="stylesheet" href="../css/common.css"> -->
+    <link rel="stylesheet" href="../css/card-slider.css">
 
     <style type="text/css">
         @font-face {
@@ -764,10 +765,10 @@
 
 
             #one .flex-container {
-                border: 13px solid #a3a3a3;
+                border: 13px solid #f2f2f2;
                 border-radius: 30px;
-                border-top: 150px solid #a3a3a3;
-                border-bottom: 80px solid #a3a3a3;
+                border-top: 150px solid #f2f2f2;
+                border-bottom: 80px solid #f2f2f2;
                 border-top-left-radius: 0px;
                 border-top-right-radius: 0px;
             }
@@ -893,6 +894,8 @@
                 margin-top: -45px;
             }
         }
+
+
     </style>
 
     <title>Document</title>
@@ -906,9 +909,7 @@
 
 
 
-
-
-
+    <!-- IMAGE GALLARY AND KEY SPECS -->
     <section id="one">
         <div class="container">
             <div class="flex-container">
@@ -1088,18 +1089,12 @@
 
 
 
-
-
-
-
-
-
-
-
     <button onclick="myFunction()">Try it</button>
     <div id="demo"></div>
 
 
+
+    <!-- FULL SPECIFICATONS TABLE -->
     <section id="two">
         <div class="container">
             <div class="flex-container">
@@ -1385,6 +1380,27 @@
 
 
 
+    <!-- CARD SLIDER -->
+    <section class="card-slider">
+
+        <div class="grid-container">
+            <main class="grid-item main">
+                <div class="items">
+                    <div class="item item1"><img src="../img/icons/google.svg" alt=""></div>
+                    <div class="item item2"><img src="../img/icons/asus.svg" alt=""></div>
+                    <div class="item item3"><img src="../img/icons/samsung.svg" alt=""></div>
+                    <div class="item item4"><img src="../img/icons/xiaomi.svg" alt=""></div>
+                    <div class="item item5"><img src="../img/icons/apple.svg" alt=""></div>
+                    <div class="item item6"><img src="../img/icons/motorola.svg" alt=""></div>
+                    <div class="item item7"><img src="../img/icons/lenovo.svg" alt=""></div>
+                </div>
+            </main>
+        </div>
+
+    </section>
+
+
+
     <!-- FOOTER -->
     <footer id="footer"></footer>
 
@@ -1427,6 +1443,47 @@
             fullImg.src = smallImg.src;
 
         }
+
+
+
+
+
+
+
+
+
+
+
+
+
+        const slider = document.querySelector(".items");
+            let isDown = false;
+            let startX;
+            let scrollLeft;
+
+            slider.addEventListener("mousedown", (e) => {
+                isDown = true;
+                slider.classList.add("active");
+                startX = e.pageX - slider.offsetLeft;
+                scrollLeft = slider.scrollLeft;
+            });
+            slider.addEventListener("mouseleave", () => {
+                isDown = false;
+                slider.classList.remove("active");
+            });
+            slider.addEventListener("mouseup", () => {
+                isDown = false;
+                slider.classList.remove("active");
+            });
+            slider.addEventListener("mousemove", (e) => {
+                if (!isDown) return;
+                e.preventDefault();
+                const x = e.pageX - slider.offsetLeft;
+                const walk = (x - startX) * 3; //scroll-fast
+                slider.scrollLeft = scrollLeft - walk;
+                console.log(walk);
+            });
+
 
 
     </script>

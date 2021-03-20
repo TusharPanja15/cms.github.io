@@ -1,49 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
     <!--External Custom CSS-->
     <link rel="stylesheet" href="../css/navbar.css">
 
 </head>
+
 <body>
 
-    <nav class="navbar">
-    
-        <!-- <button id="navbar-svg" class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"><svg xmlns="http://www.w3.org/2000/svg" width="66" height="36"
-                        fill="currentColor" class="bi bi-blockquote-left" viewBox="0 1.9 16 16">
-                        <path
-                            d="M2.5 3a.5.5 0 0 0 0 1h11a.5.5 0 0 0 0-1h-11zm5 3a.5.5 0 0 0 0 1h6a.5.5 0 0 0 0-1h-6zm0 3a.5.5 0 0 0 0 1h6a.5.5 0 0 0 0-1h-6zm-5 3a.5.5 0 0 0 0 1h11a.5.5 0 0 0 0-1h-11zm.79-5.373c.112-.078.26-.17.444-.275L3.524 6c-.122.074-.272.17-.452.287-.18.117-.35.26-.51.428a2.425 2.425 0 0 0-.398.562c-.11.207-.164.438-.164.692 0 .36.072.65.217.873.144.219.385.328.72.328.215 0 .383-.07.504-.211a.697.697 0 0 0 .188-.463c0-.23-.07-.404-.211-.521-.137-.121-.326-.182-.568-.182h-.282c.024-.203.065-.37.123-.498a1.38 1.38 0 0 1 .252-.37 1.94 1.94 0 0 1 .346-.298zm2.167 0c.113-.078.262-.17.445-.275L5.692 6c-.122.074-.272.17-.452.287-.18.117-.35.26-.51.428a2.425 2.425 0 0 0-.398.562c-.11.207-.164.438-.164.692 0 .36.072.65.217.873.144.219.385.328.72.328.215 0 .383-.07.504-.211a.697.697 0 0 0 .188-.463c0-.23-.07-.404-.211-.521-.137-.121-.326-.182-.568-.182h-.282a1.75 1.75 0 0 1 .118-.492c.058-.13.144-.254.257-.375a1.94 1.94 0 0 1 .346-.3z" />
-                    </svg>
-                </span>
-            </button> -->
-    
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    <ul class="nav justify-content-center">
-                        <li class="nav-item">
-                            <a class="navbar-brand" href="index.html"><img style="width: 180px; height: 70px;"
-                                    src="https://dynamictint.com/wp-content/uploads/2020/04/tesla-logo-vector-30.png"></a>
+    <div class="collapse" id="navbarToggleExternalContent">
+        <div class="bg-dark p-4">
+
+
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a href="index.html"><svg xmlns="http://www.w3.org/2000/svg" width="35" height="30" fill="white"
+                            class="bi bi-house-fill" viewBox="0 -2 17 16">
+                            <path fill-rule="evenodd"
+                                d="M8 3.293l6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6zm5-.793V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z" />
+                            <path fill-rule="evenodd"
+                                d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z" />
+                        </svg></a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="news.html">News</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="smartphone.html">Phones</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Reviews</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">More</a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a class="dropdown-item" href="#">Action</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">Another action</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">Separated link</a>
                         </li>
                     </ul>
+                </li>
+
+
+
+            </ul>
+
+
+        </div>
+    </div>
+
+    <nav class="navbar">
+
+        <button class="navbar-toggler" id="button" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"> </span>
+            <span> </span>
+            <span> </span>
+            <span> </span>
+        </button>
+
+        <div class="container-fluid">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <ul class="nav justify-content-center">
+                            <li class="nav-item">
+                                <a class="navbar-brand" href="index.html"><img
+                                        src="https://dynamictint.com/wp-content/uploads/2020/04/tesla-logo-vector-30.png"></a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
-    
+
     </nav>
-    
+
     <nav id="second-nav">
         <div class="container-fluid">
             <div class="container">
                 <div class="row">
                     <ul class="nav justify-content-center">
                         <li class="nav-item">
-                            <a class="navbar-brand" href="index.html"><svg xmlns="http://www.w3.org/2000/svg" width="35"
-                                    height="30" fill="white" class="bi bi-house-fill" viewBox="0 -2 17 16">
+                            <a href="index.html"><svg xmlns="http://www.w3.org/2000/svg" width="35" height="30"
+                                    fill="white" class="bi bi-house-fill" viewBox="0 -2 17 16">
                                     <path fill-rule="evenodd"
                                         d="M8 3.293l6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6zm5-.793V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z" />
                                     <path fill-rule="evenodd"
@@ -54,7 +106,7 @@
                             <a class="nav-link" href="news.html">News</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Phones</a>
+                            <a class="nav-link" href="smartphone.html">Phones</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Reviews</a>
@@ -84,4 +136,5 @@
     </nav>
 
 </body>
+
 </html>
